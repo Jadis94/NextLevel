@@ -1,0 +1,11 @@
+.btn{position:relative;display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.8rem;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;font-family:inherit;transition:transform .25s var(--ease),background .25s,color .25s,box-shadow .25s}
+.btn:active{transform:scale(.97)}
+.btn-arrow{transition:transform .25s var(--ease)}
+.btn:hover .btn-arrow{transform:translateX(4px)}
+
+.btn-primary{background:var(--gold);color:var(--navy)}
+.btn-primary:hover{background:var(--white);transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.btn-ghost{border-color:rgba(220,193,147,.6);color:var(--gold)}
+.btn-ghost:hover{background:var(--gold);color:var(--navy)}
+.btn-dark{background:var(--navy);color:var(--white)}
+.btn-dark:hover{background:var(--wine);transform:translateY(-2px);box-shadow:0 10px 24px rgba(12,31,61,.25)}

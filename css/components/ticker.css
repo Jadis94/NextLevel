@@ -1,0 +1,7 @@
+/* Striscia di parole che scorre sotto l'hero */
+.ticker{background:var(--gold);color:var(--navy);overflow:hidden;padding:1.05rem 0;border-block:1px solid rgba(12,31,61,.15)}
+.ticker-track{display:flex;width:max-content;animation:marquee 38s linear infinite;font-family:var(--serif);font-size:1.35rem;font-weight:700;font-style:italic;white-space:nowrap}
+.ticker-track span{padding-right:3rem}
+.ticker-track span::after{content:"↗";font-style:normal;font-family:var(--sans);margin-left:3rem;opacity:.5}
+.ticker:hover .ticker-track{animation-play-state:paused}
+@keyframes marquee{to{transform:translateX(-50%)}}

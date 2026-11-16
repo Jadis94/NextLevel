@@ -1,0 +1,21 @@
+/* ==========================================================
+   NEXT LEVEL — identità visiva
+   Idea guida: "il livello successivo". La diagonale della N del
+   logo che sale e si appoggia sulla L diventa una scala: ogni
+   sezione è un gradino. Navy profondo + oro sabbia come colori
+   guida, bordeaux come accento caldo. Titoli serif editoriali,
+   testo sans pulito.
+   ========================================================== */
+:root{
+  --navy:#0c1f3d;
+  --gold:#dcc193;
+  --wine:#7a2e45;
+  --paper:#f6f1e7;
+  --white:#fff;
+  --ink:#0c1f3d;
+  --muted:#4d5b73;
+  --radius:18px;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}

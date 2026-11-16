@@ -1,0 +1,37 @@
+/* CHI SIAMO E COSA FACCIAMO */
+.about{background:var(--paper)}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:4.5rem;align-items:center}
+
+.about-intro p{margin-bottom:1.1rem;font-size:1.07rem;color:#25344f}
+.about-intro p strong{color:var(--navy);font-family:var(--serif);font-size:1.25rem;line-height:1.35;display:block;border-left:3px solid var(--wine);padding-left:1rem;margin-top:1.6rem}
+
+/* Schema Professionisti → Next Level → Chi sta iniziando */
+.bridge{background:var(--navy);color:var(--white);border-radius:var(--radius);padding:2.6rem;position:relative;box-shadow:0 30px 60px rgba(12,31,61,.25);overflow:hidden}
+.bridge::before{content:"";position:absolute;top:0;left:0;width:100%;height:5px;background:linear-gradient(90deg,var(--wine),var(--gold))}
+.bridge::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;border:34px solid rgba(220,193,147,.07)}
+.bridge .side{display:flex;align-items:center;gap:1.1rem;padding:.9rem 0;position:relative;z-index:1}
+.bridge .side strong{font-family:var(--serif);font-size:1.3rem}
+.bridge .dot{width:16px;height:16px;border-radius:50%;background:var(--gold);flex:none}
+.bridge .dot--accent{background:var(--wine);outline:2px solid var(--gold);outline-offset:2px;box-shadow:0 0 0 8px rgba(220,193,147,.12)}
+.bridge .line{height:38px;border-left:2px dashed rgba(220,193,147,.55);margin-left:7px}
+.bridge small{display:block;opacity:.72}
+
+/* Secondo blocco: cosa facciamo (card + domande) */
+.about-offer{margin-top:3.5rem;padding-top:3rem;border-top:1px solid rgba(12,31,61,.12);scroll-margin-top:90px}
+.about-offer .section-head h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:0}
+.about-offer .eyebrow{margin-bottom:.6rem}
+
+.questions{margin-top:1.5rem;background:var(--navy);color:var(--white);border-radius:var(--radius);padding:1.6rem 2rem;display:grid;grid-template-columns:1fr 1.4fr;gap:1.5rem;align-items:center;position:relative;overflow:hidden}
+.questions::before{content:"“";position:absolute;left:1.2rem;top:-2.2rem;font-family:var(--serif);font-size:8rem;line-height:1;color:rgba(220,193,147,.1)}
+.questions h3{font-size:1.35rem;color:var(--gold);position:relative}
+.questions ul{list-style:none}
+.questions li{padding:.5rem 0 .5rem 1.8rem;font-size:.95rem;border-bottom:1px solid rgba(220,193,147,.2);position:relative;transition:padding .25s var(--ease),color .25s}
+.questions li:hover{padding-left:2.1rem;color:var(--gold)}
+.questions li:last-child{border:0}
+.questions li::before{content:"?";position:absolute;left:0;top:.45rem;color:var(--gold);font-family:var(--serif);font-weight:800;font-size:1.1rem}
+
+@media(max-width:860px){
+  .about-grid,.questions{grid-template-columns:1fr;gap:2.5rem}
+}
+
+.about-intro .btn{margin-top:1.4rem}

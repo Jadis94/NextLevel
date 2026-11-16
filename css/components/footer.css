@@ -1,0 +1,4 @@
+footer{background:var(--navy);color:var(--white);padding:3rem 0;text-align:center;font-size:.9rem}
+footer .logo{margin-bottom:.8rem}
+footer p{opacity:.65}
+footer a{color:var(--gold)}

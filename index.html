@@ -9,23 +9,23 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Next Level – Dove il talento incontra l'esperienza">
 <meta property="og:description" content="Una rete di professionisti che fa networking e formazione per studenti, laureandi, laureati e neolavoratori.">
-<meta property="og:image" content="logo.png">
-<link rel="icon" type="image/png" href="logo.png">
-<link rel="stylesheet" href="style.css">
+<meta property="og:image" content="assets/logo.png">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
 <a class="skip" href="#contenuto">Vai al contenuto</a>
-<div class="progress" id="progress"></div>
-<aside class="rail" aria-hidden="true"><div class="rail-num" id="railNum">LV 01</div><div class="rail-name" id="railName">Start</div><div class="rail-track"><i id="railFill"></i></div></aside>
+<div class="scroll-progress" id="scroll-progress"></div>
+<aside class="level-rail" aria-hidden="true"><div class="level-num" id="level-num">LV 01</div><div class="level-name" id="level-name">Start</div><div class="level-track"><i class="level-fill" id="level-fill"></i></div></aside>
 <header>
   <div class="container nav">
-    <a href="#home" class="logo"><img src="logo.png" alt="" class="logo-img">Next<span>Level</span></a>
+    <a href="#home" class="logo"><img src="assets/logo.png" alt="" class="logo-img">Next<span>Level</span></a>
     <button class="burger" aria-label="Apri il menu" aria-expanded="false"><span></span></button>
     <nav>
       <ul id="menu">
-        <li><a href="#chi-siamo">Chi siamo</a></li>
-        <li><a href="#cosa-facciamo">Cosa facciamo</a></li>
+        <li><a href="#chi-siamo">Chi siamo e cosa facciamo</a></li>
+        <li><a href="membri.html">Membri</a></li>
         <li><a href="#per-chi">Per te</a></li>
         <li><a href="#eventi">Eventi</a></li>
         <li><a href="#faq">FAQ</a></li>
@@ -41,15 +41,15 @@
     <div>
       <span class="eyebrow">Rete di professionisti</span>
       <h1>Dove il talento incontra <em>l'esperienza.</em></h1>
-      <p class="lead" id="lead">Una rete di professionisti e futuri professionisti. Organizziamo eventi di networking e formazione, dentro e fuori l'università, per studenti, laureandi, laureati e neolavoratori.</p>
-      <div class="persona" role="group" aria-label="Personalizza il sito">
-        <span class="persona-q">Sono…</span>
-        <button type="button" class="chip" data-p="stud" aria-pressed="false">uno studente o neolavoratore</button>
-        <button type="button" class="chip" data-p="pro" aria-pressed="false">un professionista</button>
-        <button type="button" class="chip" data-p="ente" aria-pressed="false">un'università o un'azienda</button>
+      <p class="lead" id="hero-lead">Una rete di professionisti e futuri professionisti. Organizziamo eventi di networking e formazione, dentro e fuori l'università, per studenti, laureandi, laureati e neolavoratori.</p>
+      <div class="persona-picker" role="group" aria-label="Personalizza il sito">
+        <span class="persona-question">Sono…</span>
+        <button type="button" class="persona-chip" data-persona="stud" aria-pressed="false">uno studente o neolavoratore</button>
+        <button type="button" class="persona-chip" data-persona="pro" aria-pressed="false">un professionista</button>
+        <button type="button" class="persona-chip" data-persona="ente" aria-pressed="false">un'università o un'azienda</button>
       </div>
-      <div class="cta">
-        <a href="#contatti" class="btn btn-primary" id="heroCta"><span id="heroCtaT">Entra nella community</span> <span class="arr" aria-hidden="true">→</span></a>
+      <div class="hero-actions">
+        <a href="#contatti" class="btn btn-primary"><span id="hero-cta-text">Entra nella community</span> <span class="btn-arrow" aria-hidden="true">→</span></a>
         <a href="#cosa-facciamo" class="btn btn-ghost">Scopri cosa facciamo</a>
       </div>
       <div class="stats">
@@ -59,7 +59,7 @@
       </div>
     </div>
     <div class="hero-art" aria-hidden="true">
-      <span class="art-label b">Next Level</span>
+      <span class="art-label art-label--top">Next Level</span>
       <svg viewBox="0 0 400 400" fill="none">
         <defs>
           <linearGradient id="g" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#dcc193" stop-opacity=".1"/><stop offset="1" stop-color="#dcc193" stop-opacity=".55"/></linearGradient>
@@ -77,44 +77,44 @@
           <circle cx="370" cy="40" r="10" fill="#dcc193"/>
         </g>
       </svg>
-      <span class="art-label a">Livello 01 → 05</span>
+      <span class="art-label art-label--bottom">Livello 01 → 05</span>
     </div>
   </div>
 </section>
 
-<div class="strip" aria-hidden="true">
-  <div class="strip-track">
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
     <span>Networking</span><span>Speech</span><span>Formazione</span><span>Community</span><span>Università</span><span>Workshop</span><span>Professionisti</span>
     <span>Networking</span><span>Speech</span><span>Formazione</span><span>Community</span><span>Università</span><span>Workshop</span><span>Professionisti</span>
   </div>
 </div>
 
 <section class="about" id="chi-siamo">
-  <div class="container about-grid">
-    <div class="reveal">
-      <span class="eyebrow">Chi siamo</span>
+  <div class="container">
+    <div class="about-grid">
+    <div class="about-intro reveal">
+      <span class="eyebrow">Chi siamo e cosa facciamo</span>
       <h2>Una rete di <em>professionisti</em> che condivide esperienza.</h2>
       <p>Next Level nasce con due scopi: creare una rete di professionisti e, attraverso quella rete, portare esperienza e competenze a chi sta costruendo il proprio percorso.</p>
       <p>I nostri soci sono in gran parte professionisti o futuri professionisti. Sono loro a tenere speech, talk e momenti di formazione rivolti a studenti, laureandi, laureati e neolavoratori, dentro e fuori l'università.</p>
       <p><strong>Una rete che cresce insieme e restituisce valore a chi arriva dopo.</strong></p>
+      <a href="membri.html" class="btn btn-dark">Conosci i membri <span class="btn-arrow" aria-hidden="true">→</span></a>
     </div>
     <div class="bridge reveal" aria-hidden="true">
       <div class="side"><span class="dot"></span><div><strong>Professionisti</strong><small>Soci e futuri professionisti</small></div></div>
       <div class="line"></div>
-      <div class="side"><span class="dot w"></span><div><strong>Next Level</strong><small>Networking, speech, formazione</small></div></div>
+      <div class="side"><span class="dot dot--accent"></span><div><strong>Next Level</strong><small>Networking, speech, formazione</small></div></div>
       <div class="line"></div>
       <div class="side"><span class="dot"></span><div><strong>Chi sta iniziando</strong><small>Studenti, laureandi, laureati, neolavoratori</small></div></div>
     </div>
-  </div>
-</section>
+    </div>
 
-<section id="cosa-facciamo">
-  <div class="container">
-    <div class="reveal sec-head">
+    <div class="about-offer" id="cosa-facciamo">
+    <div class="reveal section-head">
       <span class="eyebrow">Cosa facciamo</span>
       <h2>Le connessioni che aprono <em>opportunità.</em></h2>
     </div>
-    <div class="cards bento">
+    <div class="cards cards--compact">
       <article class="card reveal">
         <div class="icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h3>Networking</h3>
@@ -146,29 +146,30 @@
         <li>Come si costruisce una carriera nella consulenza, nel finance o nell'IT?</li>
       </ul>
     </div>
+    </div>
   </div>
 </section>
 
-<section class="forwho" id="per-chi">
+<section class="audience" id="per-chi">
   <div class="container">
-    <div class="reveal sec-head">
+    <div class="reveal section-head">
       <span class="eyebrow">Cosa facciamo per te</span>
       <h2>Una community, <em>tre modi</em> di farne parte.</h2>
     </div>
     <div class="tabs reveal" role="tablist" aria-label="Chi sei?">
-      <button role="tab" class="tab on" id="t-giovani" aria-controls="tab-giovani" data-tab="giovani" aria-selected="true">Studenti e neolavoratori</button>
+      <button role="tab" class="tab is-active" id="t-giovani" aria-controls="tab-giovani" data-tab="giovani" aria-selected="true">Studenti e neolavoratori</button>
       <button role="tab" class="tab" tabindex="-1" id="t-pro" aria-controls="tab-pro" data-tab="pro" aria-selected="false">Per i professionisti</button>
       <button role="tab" class="tab" tabindex="-1" id="t-enti" aria-controls="tab-enti" data-tab="enti" aria-selected="false">Per università e aziende</button>
     </div>
     <div class="panels">
-      <div class="panel on" id="tab-giovani" role="tabpanel" aria-labelledby="t-giovani" tabindex="0">
+      <div class="panel is-active" id="tab-giovani" role="tabpanel" aria-labelledby="t-giovani" tabindex="0">
         <ul>
           <li>Speech e talk di professionisti del tuo settore</li>
           <li>Orientamento basato su esperienze reali</li>
           <li>Workshop e formazione, in università e fuori</li>
           <li>Networking e contatti utili per entrare nel mondo del lavoro</li>
         </ul>
-        <a href="#contatti" class="btn btn-wine">Partecipa agli eventi</a>
+        <a href="#contatti" class="btn btn-dark">Partecipa agli eventi</a>
       </div>
       <div class="panel" id="tab-pro" role="tabpanel" aria-labelledby="t-pro" tabindex="0">
         <ul>
@@ -177,7 +178,7 @@
           <li>Proponi o tieni speech e talk per studenti e neolavoratori</li>
           <li>Partecipa a eventi di networking e formazione</li>
         </ul>
-        <a href="#contatti" class="btn btn-wine">Entra nella rete</a>
+        <a href="#contatti" class="btn btn-dark">Entra nella rete</a>
       </div>
       <div class="panel" id="tab-enti" role="tabpanel" aria-labelledby="t-enti" tabindex="0">
         <ul>
@@ -186,15 +187,15 @@
           <li>Eventi di orientamento su misura</li>
           <li>Collaborazioni e progetti condivisi</li>
         </ul>
-        <a href="#contatti" class="btn btn-wine">Collaboriamo</a>
+        <a href="#contatti" class="btn btn-dark">Collaboriamo</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="steps-sec" id="come-funziona">
+<section class="journey" id="come-funziona">
   <div class="container">
-    <div class="reveal sec-head">
+    <div class="reveal section-head">
       <span class="eyebrow">Come funziona</span>
       <h2>Dal primo incontro alla tua <em>carriera.</em></h2>
     </div>
@@ -207,26 +208,26 @@
   </div>
 </section>
 
-<section class="quote" aria-live="polite">
+<section class="quote-band" aria-live="polite">
   <div class="container">
-    <blockquote id="quote">Le opportunità nascono dagli incontri.</blockquote>
-    <div class="dots" id="dots"></div>
+    <blockquote id="quote-text">Le opportunità nascono dagli incontri.</blockquote>
+    <div class="quote-dots" id="quote-dots"></div>
   </div>
 </section>
 
 <section id="eventi">
   <div class="container">
-    <div class="reveal sec-head">
+    <div class="reveal section-head">
       <span class="eyebrow">News &amp; Eventi</span>
       <h2>I prossimi <em>appuntamenti.</em></h2>
     </div>
-    <div class="cards" id="events"></div>
-    <div class="events-note reveal"><span>Le date saranno annunciate a breve.</span><a href="#contatti">Scrivici per ricevere gli aggiornamenti →</a></div>
+    <div class="cards events-grid" id="events-list"></div>
+    <div class="events-note reveal"><span>Altri appuntamenti saranno annunciati a breve.</span><a href="#contatti">Scrivici per ricevere gli aggiornamenti →</a></div>
   </div>
 </section>
 
-<section class="faq-sec" id="faq">
-  <div class="container faq-wrap">
+<section class="faq-section" id="faq">
+  <div class="container faq-layout">
     <div class="reveal">
       <span class="eyebrow">FAQ</span>
       <h2>Domande frequenti.</h2>
@@ -240,11 +241,11 @@
   </div>
 </section>
 
-<section class="join-band">
-  <span class="ghost" aria-hidden="true">LEVEL UP</span>
+<section class="cta-band">
+  <span class="cta-band-watermark" aria-hidden="true">LEVEL UP</span>
   <div class="container reveal">
     <h2>Pronto a fare il <em>prossimo livello?</em></h2>
-    <a href="#contatti" class="btn btn-primary">Unisciti a Next Level <span class="arr" aria-hidden="true">→</span></a>
+    <a href="#contatti" class="btn btn-primary">Unisciti a Next Level <span class="btn-arrow" aria-hidden="true">→</span></a>
   </div>
 </section>
 
@@ -255,23 +256,23 @@
       <h2>Porta il tuo talento al <em>livello successivo.</em></h2>
       <p>Sei uno studente, un laureando, un professionista o un ente che vuole collaborare? Scrivici e diventa parte di Next Level.</p>
     </div>
-    <form id="form" class="reveal">
-      <div><label for="nome">Nome e cognome</label><input id="nome" required autocomplete="name" placeholder="Come ti chiami?"></div>
-      <div><label for="email">Email</label><input id="email" type="email" required autocomplete="email" placeholder="nome@esempio.it"></div>
-      <div><label for="ruolo">Chi sei?</label>
-        <select id="ruolo">
+    <form id="contact-form" class="reveal">
+      <div><label for="contact-name">Nome e cognome</label><input id="contact-name" required autocomplete="name" placeholder="Come ti chiami?"></div>
+      <div><label for="contact-email">Email</label><input id="contact-email" type="email" required autocomplete="email" placeholder="nome@esempio.it"></div>
+      <div><label for="contact-role">Chi sei?</label>
+        <select id="contact-role">
           <option>Studente / Laureando / Laureato</option>
           <option>Neolavoratore</option>
           <option>Professionista</option>
           <option>Università / Scuola / Azienda</option>
         </select></div>
-      <div><label for="testo">Messaggio</label><textarea id="testo" required placeholder="Raccontaci chi sei e come vorresti partecipare."></textarea></div>
-      <label class="check"><input type="checkbox" required> Ho letto l'<a href="#privacy" data-privacy>informativa sulla privacy</a> e acconsento al trattamento dei miei dati per essere ricontattato.</label>
-      <button class="btn btn-wine" type="submit">Invia messaggio</button>
-      <div class="msg" id="msg" role="status">
+      <div><label for="contact-message">Messaggio</label><textarea id="contact-message" required placeholder="Raccontaci chi sei e come vorresti partecipare."></textarea></div>
+      <label class="consent"><input type="checkbox" required> Ho letto l'<a href="#privacy" data-privacy>informativa sulla privacy</a> e acconsento al trattamento dei miei dati per essere ricontattato.</label>
+      <button class="btn btn-dark" type="submit">Invia messaggio</button>
+      <div class="form-success" id="form-success" role="status">
         <strong>Grazie, ci siamo quasi.</strong>
         <p>Si aprirà il tuo programma di posta con il messaggio già pronto: ti basta premere "Invia". Se non si apre, scrivici a <a href="mailto:desilvestrisluca@gmail.com">desilvestrisluca@gmail.com</a>.</p>
-        <button type="button" class="copy" id="copyMail">Copia indirizzo email</button>
+        <button type="button" class="copy-email" id="copy-email">Copia indirizzo email</button>
       </div>
     </form>
   </div>
@@ -280,15 +281,15 @@
 
 <footer>
   <div class="container">
-    <a href="#home" class="logo"><img src="logo.png" alt="" class="logo-img">Next<span>Level</span></a>
-    <p>© <span id="year"></span> Next Level – Associazione. Dove il talento incontra l'esperienza.</p>
+    <a href="#home" class="logo"><img src="assets/logo.png" alt="" class="logo-img">Next<span>Level</span></a>
+    <p>© <span id="footer-year"></span> Next Level – Associazione. Dove il talento incontra l'esperienza.</p>
     <p><a href="#privacy" data-privacy>Informativa sulla privacy</a></p>
   </div>
 </footer>
 
 <dialog id="privacy" aria-labelledby="privacy-title">
-  <div class="dlg-head"><h2 id="privacy-title">Informativa sulla privacy</h2><button class="dlg-close" aria-label="Chiudi">&times;</button></div>
-  <div class="dlg-body">
+  <div class="privacy-head"><h2 id="privacy-title">Informativa sulla privacy</h2><button class="privacy-close" aria-label="Chiudi">&times;</button></div>
+  <div class="privacy-body">
     <p><em>Informativa ai sensi degli artt. 13-14 del Regolamento (UE) 2016/679 (GDPR).</em></p>
     <h3>Titolare del trattamento</h3>
     <p>Next Level (associazione). Contatto: <a href="mailto:desilvestrisluca@gmail.com">desilvestrisluca@gmail.com</a>.</p>
@@ -304,14 +305,27 @@
     <p>I dati non sono venduti né diffusi. Possono essere accessibili solo a persone autorizzate dell'associazione e ai fornitori di servizi tecnici (posta elettronica) necessari alla gestione.</p>
     <h3>I tuoi diritti</h3>
     <p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, opposizione e portabilità dei tuoi dati, e revocare il consenso in qualsiasi momento, scrivendo all'indirizzo del titolare. Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>).</p>
+    <h3>Pagina Membri</h3>
+    <p>Nella pagina Membri pubblichiamo nome, azienda, settore, foto e link al profilo LinkedIn solo delle persone che hanno dato il proprio consenso. Ogni membro può chiedere in qualsiasi momento la modifica o la rimozione dei propri dati scrivendo al titolare.</p>
     <h3>Hosting</h3>
     <p>Il sito è ospitato su GitHub Pages (GitHub, Inc.), che può trattare dati tecnici di navigazione (es. indirizzo IP) secondo la propria informativa.</p>
     <p><small>Ultimo aggiornamento: novembre 2026.</small></p>
   </div>
 </dialog>
 
-<button class="totop" id="totop" aria-label="Torna su"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<button class="back-to-top" id="back-to-top" aria-label="Torna su"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
-<script src="script.js"></script>
+<script src="js/config.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/quote-rotator.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/events.js"></script>
+<script src="js/privacy-dialog.js"></script>
+<script src="js/hero-effects.js"></script>
+<script src="js/level-rail.js"></script>
+<script src="js/persona.js"></script>
+<script src="js/contact-form.js"></script>
+<script src="js/footer.js"></script>
 </body>
 </html>

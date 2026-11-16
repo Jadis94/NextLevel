@@ -1,0 +1,11 @@
+/* PER TE: schede (tab) per studenti, professionisti ed enti */
+.audience{background:var(--paper)}
+.tabs{display:flex;gap:.6rem;flex-wrap:wrap;margin:2rem 0 1.5rem}
+.tab{padding:.75rem 1.5rem;border-radius:999px;border:2px solid var(--navy);background:transparent;color:var(--navy);font:inherit;font-weight:700;cursor:pointer;transition:.25s}
+.tab:hover{background:rgba(12,31,61,.08)}
+.tab.is-active{background:var(--navy);color:var(--gold)}
+.panel{display:none;background:var(--white);border-radius:var(--radius);padding:2.2rem;border-left:6px solid var(--wine);box-shadow:0 14px 34px rgba(12,31,61,.09)}
+.panel.is-active{display:block;animation:up .5s var(--ease)}
+.panel ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem 2.2rem;margin-bottom:1.9rem}
+.panel li{padding-left:2rem;position:relative}
+.panel li::before{content:"";position:absolute;left:0;top:.45rem;width:.95rem;height:.55rem;border-left:3px solid var(--wine);border-bottom:3px solid var(--wine);transform:rotate(-48deg)}

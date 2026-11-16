@@ -1,0 +1,76 @@
+/* HERO: titolo, selettore profilo, statistiche e scala animata del logo */
+.hero{--mx:70%;--my:30%;position:relative;min-height:100vh;display:flex;align-items:center;color:var(--white);padding:120px 0 90px;overflow:hidden;
+  background:
+   radial-gradient(900px 600px at 88% 8%,rgba(122,46,69,.55),transparent 60%),
+   radial-gradient(700px 500px at 0% 100%,rgba(220,193,147,.14),transparent 60%),
+   linear-gradient(180deg,var(--navy),#091830)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(220,193,147,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(220,193,147,.05) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 70% 40%,#000 10%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 70% 40%,#000 10%,transparent 70%);pointer-events:none}
+/* bagliore che segue il mouse (--mx/--my impostati da hero-effects.js) */
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(520px circle at var(--mx) var(--my),rgba(220,193,147,.16),transparent 60%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+.hero .eyebrow{color:var(--gold)}
+
+/* Titolo: entrata parola per parola (le parole sono create da hero-effects.js) */
+.hero h1{font-size:clamp(2.7rem,6.6vw,5.4rem);max-width:13ch;margin-bottom:1.5rem;text-wrap:balance}
+.hero h1 em{color:var(--gold)}
+.hero h1 .word{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
+.hero h1 .word>span{display:inline-block;transform:translateY(110%);animation:wordUp .9s var(--ease) forwards;animation-delay:calc(.15s + var(--i)*.09s)}
+.hero h1 em .word>span{background:linear-gradient(100deg,var(--gold),#fff 45%,var(--gold));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:wordUp .9s var(--ease) forwards,shine 5s linear 1.6s infinite;animation-delay:calc(.15s + var(--i)*.09s),0s}
+@keyframes wordUp{to{transform:none}}
+@keyframes shine{to{background-position:-200% 0}}
+
+.hero p.lead{max-width:50ch;font-size:1.18rem;opacity:.88;margin-bottom:2.2rem;transition:opacity .25s,transform .25s}
+.hero p.lead.is-swapping{opacity:0;transform:translateY(6px)}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+
+/* Selettore "Sono…" */
+.persona-picker{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:0 0 1.6rem}
+.persona-question{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--gold);margin-right:.3rem}
+.persona-chip{font:inherit;font-size:.9rem;font-weight:600;color:var(--white);background:rgba(255,255,255,.07);border:1.5px solid rgba(220,193,147,.35);border-radius:999px;padding:.5rem 1rem;cursor:pointer;transition:background .25s,color .25s,border-color .25s,transform .25s var(--ease)}
+.persona-chip:hover{border-color:var(--gold);transform:translateY(-2px)}
+.persona-chip[aria-pressed=true]{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+
+/* Statistiche */
+.stats{display:flex;gap:0;margin-top:3.6rem;flex-wrap:wrap;border-top:1px solid rgba(220,193,147,.25);padding-top:1.6rem}
+.stats div{padding-right:2.2rem;margin-right:2.2rem;border-right:1px solid rgba(220,193,147,.2)}
+.stats div:last-child{border:0;margin:0;padding:0}
+.stats strong{display:block;font-family:var(--serif);font-size:1.7rem;color:var(--gold)}
+.stats span{font-size:.85rem;opacity:.75}
+
+/* Entrata a cascata */
+.hero .eyebrow,.hero p.lead,.hero .hero-actions,.hero .stats,.hero-art{opacity:0;transform:translateY(28px);animation:up .9s var(--ease) forwards}
+.hero p.lead{animation-delay:.28s}
+.hero .hero-actions{animation-delay:.42s}
+.hero .stats{animation-delay:.56s}
+.hero-art{animation-delay:.3s}
+
+/* Scala del logo */
+.hero-art{position:relative;aspect-ratio:1;max-width:460px;justify-self:center;width:100%;will-change:transform}
+.hero-art svg{width:100%;height:100%;overflow:visible}
+.stair{transform-box:fill-box;transform-origin:bottom;transform:scaleY(0);animation:grow .9s var(--ease) forwards}
+.stair:nth-child(1){animation-delay:.5s}
+.stair:nth-child(2){animation-delay:.65s}
+.stair:nth-child(3){animation-delay:.8s}
+.stair:nth-child(4){animation-delay:.95s}
+.stair:nth-child(5){animation-delay:1.1s}
+@keyframes grow{to{transform:scaleY(1)}}
+.climb{stroke-dasharray:520;stroke-dashoffset:520;animation:draw 1.6s var(--ease) 1.2s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.peak{opacity:0;animation:fadein .5s 2.6s forwards}
+.peak-ring{transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-out 3s infinite}
+@keyframes fadein{to{opacity:1}}
+@keyframes pulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+.art-label{position:absolute;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);opacity:.8;font-weight:700}
+.art-label--bottom{left:2%;bottom:-1.8rem}
+.art-label--top{right:0;top:-.4rem;color:var(--white)}
+
+@media(max-width:860px){
+  .hero{padding-top:110px}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{max-width:300px;margin-top:1rem}
+  .stats div{padding-right:1.2rem;margin-right:1.2rem}
+}
+@media(max-width:540px){
+  .stats{gap:1rem 0}
+  .stats div{border:0;margin:0;padding-right:2rem}
+}

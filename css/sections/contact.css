@@ -1,0 +1,35 @@
+/* BANDA "LEVEL UP" + CONTATTI */
+.cta-band{background:linear-gradient(120deg,var(--navy),#3b2040 60%,var(--wine));color:var(--white);text-align:center;padding:5.5rem 0;position:relative;overflow:hidden}
+.cta-band::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 46px,rgba(220,193,147,.05) 46px 48px)}
+.cta-band .container{position:relative}
+.cta-band h2{margin-bottom:1.6rem}
+.cta-band h2 em{color:var(--gold)}
+.cta-band-watermark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:var(--serif);font-weight:800;font-size:clamp(5rem,22vw,19rem);letter-spacing:-.04em;white-space:nowrap;color:transparent;-webkit-text-stroke:2px rgba(220,193,147,.16);pointer-events:none;user-select:none;line-height:1}
+
+.contact{background:var(--paper)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem}
+.contact p{color:#25344f;font-size:1.05rem}
+
+form{display:grid;gap:1.1rem;background:var(--white);padding:2rem;border-radius:var(--radius);box-shadow:0 20px 50px rgba(12,31,61,.1)}
+label{font-size:.85rem;font-weight:700;display:block;margin-bottom:.3rem}
+input,select,textarea{width:100%;padding:.9rem 1rem;border-radius:12px;border:1.5px solid rgba(12,31,61,.2);font:inherit;background:var(--white);color:var(--navy);transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--wine);box-shadow:0 0 0 4px rgba(122,46,69,.14)}
+input:user-invalid,textarea:user-invalid{border-color:#b3261e}
+textarea{min-height:130px;resize:vertical}
+.consent{display:flex;gap:.6rem;align-items:flex-start;font-weight:400;font-size:.85rem}
+.consent input{width:auto;margin-top:.25rem;flex:none;accent-color:var(--wine)}
+.consent a{color:var(--wine)}
+
+/* Messaggio mostrato dopo l'invio */
+.form-success{display:none;padding:1rem;border-radius:12px;background:var(--navy);color:var(--gold);border-left:4px solid var(--gold)}
+.form-success p{margin:.4rem 0 .8rem;font-size:.92rem;color:rgba(255,255,255,.85)}
+.form-success a{color:var(--gold)}
+.copy-email{font:inherit;font-size:.85rem;font-weight:700;background:var(--gold);color:var(--navy);border:0;border-radius:999px;padding:.45rem 1rem;cursor:pointer}
+.copy-email:hover{background:#fff}
+
+@media(max-width:860px){
+  .contact-grid{grid-template-columns:1fr;gap:2.5rem}
+}
+@media(max-width:540px){
+  form{padding:1.4rem}
+}

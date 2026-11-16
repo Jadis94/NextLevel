@@ -1,0 +1,8 @@
+/* Comparsa degli elementi allo scroll.
+   Va caricato DOPO i componenti: la sua `transition` deve prevalere. */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.is-visible{opacity:1;transform:none}
+.cards .reveal:nth-child(2),.steps .reveal:nth-child(2){transition-delay:.12s}
+.cards .reveal:nth-child(3),.steps .reveal:nth-child(3){transition-delay:.24s}
+.cards .reveal:nth-child(4),.steps .reveal:nth-child(4){transition-delay:.36s}
+.steps li.reveal.is-visible{transition:opacity .8s var(--ease),transform .35s var(--ease),box-shadow .35s}

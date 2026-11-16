@@ -1,0 +1,10 @@
+/* Finestra modale con l'informativa privacy */
+dialog{border:0;border-radius:var(--radius);width:min(720px,92vw);max-height:85vh;padding:0;color:var(--navy);box-shadow:0 30px 80px rgba(0,0,0,.4);margin:auto}
+dialog::backdrop{background:rgba(12,31,61,.78);backdrop-filter:blur(3px)}
+dialog[open]{animation:up .35s ease}
+.privacy-head{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 1.6rem;background:var(--navy);color:var(--gold);position:sticky;top:0}
+.privacy-head h2{margin:0;font-size:1.35rem}
+.privacy-close{background:none;border:0;color:var(--gold);font-size:2rem;line-height:1;cursor:pointer;width:44px;height:44px}
+.privacy-body{padding:1.5rem 1.6rem 2rem;overflow-y:auto;max-height:calc(85vh - 70px)}
+.privacy-body h3{font-size:1.05rem;margin:1.2rem 0 .3rem;color:var(--wine)}
+.privacy-body a{color:var(--wine)}

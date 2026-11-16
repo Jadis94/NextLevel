@@ -1,0 +1,33 @@
+/* COME FUNZIONA: 4 passi a scala + frase a rotazione */
+.journey{overflow:hidden}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:2.5rem;align-items:start}
+.steps li{padding:1.8rem;background:var(--paper);border-radius:var(--radius);border-top:5px solid var(--wine);position:relative;transition:transform .35s var(--ease),box-shadow .35s}
+.steps li:nth-child(1){margin-top:108px}
+.steps li:nth-child(2){margin-top:72px;border-top-color:#a0425c}
+.steps li:nth-child(3){margin-top:36px;border-top-color:#c9a36e}
+.steps li:nth-child(4){margin-top:0;background:var(--navy);color:var(--white);border-top-color:var(--gold)}
+.steps li:nth-child(4) p{color:rgba(255,255,255,.8)}
+.steps li:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(12,31,61,.15)}
+.steps b{font-family:var(--serif);font-size:3rem;color:transparent;-webkit-text-stroke:1.5px var(--wine);display:block;line-height:1;margin-bottom:.8rem}
+.steps li:nth-child(4) b{-webkit-text-stroke-color:var(--gold)}
+.steps h3{margin-bottom:.4rem;font-size:1.4rem}
+.steps p{font-size:.95rem;color:var(--muted)}
+
+/* Frasi a rotazione */
+.quote-band{background:var(--wine);color:var(--white);text-align:center;padding:2.8rem 0 2.2rem;position:relative;overflow:hidden}
+.quote-band::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 50% 0%,rgba(220,193,147,.2),transparent 70%)}
+.quote-band .container{position:relative}
+.quote-band blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,2.8vw,1.9rem);font-weight:700;line-height:1.25;max-width:34ch;margin:0 auto;min-height:2.5em;display:flex;align-items:center;justify-content:center;transition:opacity .5s,transform .5s}
+.quote-band blockquote.is-fading{opacity:0;transform:translateY(10px)}
+.quote-dots{display:flex;gap:.2rem;justify-content:center;margin-top:.6rem}
+.quote-dots button{width:28px;height:28px;border:0;background:none;cursor:pointer;padding:0;position:relative}
+.quote-dots button::before{content:"";position:absolute;inset:9px;border-radius:50%;background:rgba(220,193,147,.4);transition:.3s}
+.quote-dots button.is-active::before{background:var(--gold);inset:7px}
+
+@media(max-width:980px){
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .steps li:nth-child(n){margin-top:0}
+}
+@media(max-width:540px){
+  .steps{grid-template-columns:1fr}
+}
