@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contatti – Next Level</title>
+<meta name="description" content="Scrivi a Next Level: studenti, professionisti, università e aziende possono entrare nella rete e collaborare con noi.">
+<meta name="theme-color" content="#0c1f3d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contatti – Next Level">
+<meta property="og:description" content="Scrivici per entrare nella rete di Next Level.">
+<meta property="og:image" content="assets/logo.png">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<a class="skip" href="#contenuto">Vai al contenuto</a>
+<div class="scroll-progress" id="scroll-progress"></div>
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo"><img src="assets/logo.png" alt="" class="logo-img">Next<span>Level</span></a>
+    <button class="burger" aria-label="Apri il menu" aria-expanded="false"><span></span></button>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html#chi-siamo">Chi siamo e cosa facciamo</a></li>
+        <li><a href="membri.html">Membri</a></li>
+        <li><a href="index.html#per-chi">Per te</a></li>
+        <li><a href="index.html#eventi">Eventi</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="contatti.html" aria-current="page" class="btn btn-primary">Unisciti</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenuto">
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Contatti</span>
+    <h1>Scrivici, <em>ti rispondiamo noi.</em></h1>
+    <p>Sei uno studente, un laureando, un professionista o un ente che vuole collaborare? Raccontaci chi sei: leggiamo ogni messaggio e ti rispondiamo via email.</p>
+  </div>
+</section>
+
+<section class="contact" id="contatti">
+  <div class="container contact-grid">
+    <div class="reveal contact-intro">
+      <h2>Come funziona</h2>
+      <ol class="contact-steps">
+        <li><span>1</span><div><strong>Compili il modulo</strong><small>Bastano nome, email e due righe su di te.</small></div></li>
+        <li><span>2</span><div><strong>Si apre la tua posta</strong><small>Il messaggio è già pronto: ti basta premere "Invia".</small></div></li>
+        <li><span>3</span><div><strong>Ti rispondiamo</strong><small>Ti spieghiamo come entrare, partecipare o proporre un talk.</small></div></li>
+      </ol>
+    </div>
+    <form id="contact-form" class="reveal" novalidate>
+      <div class="form-row">
+        <div class="field"><label for="contact-name">Nome e cognome</label><input id="contact-name" required autocomplete="name" placeholder="Come ti chiami?" aria-describedby="err-contact-name"><small class="field-error" id="err-contact-name"></small></div>
+        <div class="field"><label for="contact-email">Email</label><input id="contact-email" type="email" required autocomplete="email" placeholder="nome@esempio.it" aria-describedby="err-contact-email"><small class="field-error" id="err-contact-email"></small></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="contact-phone">Telefono <span class="optional">(facoltativo)</span></label><input id="contact-phone" type="tel" autocomplete="tel" placeholder="+39 333 1234567" aria-describedby="err-contact-phone"><small class="field-error" id="err-contact-phone"></small></div>
+        <div class="field"><label for="contact-role">Chi sei?</label>
+          <select id="contact-role">
+            <option>Studente / Laureando / Laureato</option>
+            <option>Neolavoratore</option>
+            <option>Professionista</option>
+            <option>Università / Scuola / Azienda</option>
+          </select></div>
+      </div>
+      <div class="field"><label for="contact-org">Università, azienda o settore <span class="optional">(facoltativo)</span></label><input id="contact-org" autocomplete="organization" placeholder="Es. Politecnico, Telco, Energia"></div>
+      <div class="field"><label for="contact-message">Messaggio</label><textarea id="contact-message" required minlength="10" maxlength="1000" placeholder="Raccontaci chi sei e come vorresti partecipare." aria-describedby="err-contact-message"></textarea>
+        <div class="field-foot"><small class="field-error" id="err-contact-message"></small><small class="field-count" id="message-count" aria-hidden="true">0 / 1000</small></div></div>
+      <div class="field"><label class="consent"><input type="checkbox" id="contact-consent" required aria-describedby="err-contact-consent"> <span>Ho letto l'<a href="index.html#privacy" target="_blank" rel="noopener">informativa sulla privacy</a> e acconsento al trattamento dei miei dati per essere ricontattato.</span></label><small class="field-error" id="err-contact-consent"></small></div>
+      <button class="btn btn-dark" type="submit" id="contact-submit"><span id="contact-submit-text">Invia messaggio</span> <span class="btn-arrow" aria-hidden="true">→</span></button>
+      <div class="form-success" id="form-success" role="status" tabindex="-1">
+        <div class="success-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+        <div>
+          <strong>Grazie, ci siamo quasi.</strong>
+          <p>Si aprirà il tuo programma di posta con il messaggio già pronto: ti basta premere "Invia". Se non si apre, scrivici a <a href="mailto:desilvestrisluca@gmail.com">desilvestrisluca@gmail.com</a>.</p>
+          <div class="success-actions">
+            <a class="copy-email" id="reopen-mail" href="#">Apri di nuovo la posta</a>
+            <button type="button" class="copy-email copy-email--ghost" id="copy-email">Copia indirizzo email</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <a href="index.html" class="logo"><img src="assets/logo.png" alt="" class="logo-img">Next<span>Level</span></a>
+    <p>© <span id="footer-year"></span> Next Level – Associazione. Dove il talento incontra l'esperienza.</p>
+    <p><a href="index.html#privacy">Informativa sulla privacy</a></p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="back-to-top" aria-label="Torna su"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<script src="js/data/site.js"></script>
+<script src="js/data/personas.js"></script>
+<script src="js/core/reveal.js"></script>
+<script src="js/core/navigation.js"></script>
+<script src="js/pages/contact-form.js"></script>
+<script src="js/core/footer.js"></script>
+</body>
+</html>

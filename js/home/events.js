@@ -1,4 +1,4 @@
-/* Genera le card degli eventi a partire da NextLevel.events (vedi config.js).
+/* Genera le card degli eventi a partire da NextLevel.events (vedi js/data/events.js).
    Ogni card è interamente cliccabile e porta a evento.html?id=… */
 (function (NL) {
   const list = document.getElementById('events-list');

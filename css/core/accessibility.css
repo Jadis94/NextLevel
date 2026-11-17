@@ -2,9 +2,8 @@
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition:none!important;scroll-behavior:auto!important}
   .reveal,.hero .eyebrow,.hero p.lead,.hero .hero-actions,.hero .stats,.hero-art{opacity:1;transform:none}
-  .stair{transform:none}
-  .climb{stroke-dashoffset:0}
-  .peak{opacity:1}
+  .node,.hub{transform:none}
+  .link{stroke-dashoffset:0}
   .ticker-track{animation:none}
   .hero h1 .word>span{transform:none}
   .hero h1 em .word>span{color:var(--gold);-webkit-text-fill-color:var(--gold)}

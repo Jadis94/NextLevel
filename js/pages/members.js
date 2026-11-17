@@ -1,4 +1,4 @@
-/* Genera le card dei membri a partire da NextLevel.members (vedi config.js) */
+/* Genera le card dei membri a partire da NextLevel.members (vedi js/data/members.js) */
 (function (NL) {
   const grid = document.getElementById('members-list');
 

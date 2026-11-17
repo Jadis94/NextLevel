@@ -14,7 +14,7 @@
     if (focus) tab.focus();
   }
 
-  // Usato da persona.js per aprire la scheda giusta
+  // Usato da home/persona.js per aprire la scheda giusta
   NL.selectTab = name => {
     const tab = tabs.find(t => t.dataset.tab === name);
     if (tab) select(tab);

@@ -1,4 +1,4 @@
-/* Pagina di dettaglio di un evento: evento.html?id=<id> (dati in config.js) */
+/* Pagina di dettaglio di un evento: evento.html?id=<id> (dati in js/data/events.js) */
 (function (NL) {
   const container = document.getElementById('event-detail');
   const id = new URLSearchParams(location.search).get('id');
@@ -43,7 +43,7 @@
         <aside class="event-aside">
           <h2>Informazioni</h2>
           <dl>${facts}</dl>
-          <a class="btn btn-primary" href="index.html#contatti">Scrivici per info <span class="btn-arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-primary" href="contatti.html">Scrivici per info <span class="btn-arrow" aria-hidden="true">→</span></a>
         </aside>
       </div>
     </section>`;

@@ -9,7 +9,7 @@
     });
   }, { threshold: .12 });
 
-  // Da richiamare anche per gli elementi aggiunti dinamicamente (vedi events.js)
+  // Da richiamare anche per gli elementi aggiunti dinamicamente (vedi home/events.js)
   NL.observeReveal = (root = document) => {
     root.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   };

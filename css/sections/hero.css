@@ -1,4 +1,4 @@
-/* HERO: titolo, selettore profilo, statistiche e scala animata del logo */
+/* HERO: titolo, selettore profilo, statistiche e rete animata */
 .hero{--mx:70%;--my:30%;position:relative;min-height:100vh;display:flex;align-items:center;color:var(--white);padding:120px 0 90px;overflow:hidden;
   background:
    radial-gradient(900px 600px at 88% 8%,rgba(122,46,69,.55),transparent 60%),
@@ -7,7 +7,7 @@
 .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(220,193,147,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(220,193,147,.05) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 70% 40%,#000 10%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 70% 40%,#000 10%,transparent 70%);pointer-events:none}
 /* bagliore che segue il mouse (--mx/--my impostati da hero-effects.js) */
 .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(520px circle at var(--mx) var(--my),rgba(220,193,147,.16),transparent 60%);pointer-events:none}
-.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
 .hero .eyebrow{color:var(--gold)}
 
 /* Titolo: entrata parola per parola (le parole sono create da hero-effects.js) */
@@ -44,30 +44,22 @@
 .hero .stats{animation-delay:.56s}
 .hero-art{animation-delay:.3s}
 
-/* Scala del logo */
-.hero-art{position:relative;aspect-ratio:1;max-width:460px;justify-self:center;width:100%;will-change:transform}
-.hero-art svg{width:100%;height:100%;overflow:visible}
-.stair{transform-box:fill-box;transform-origin:bottom;transform:scaleY(0);animation:grow .9s var(--ease) forwards}
-.stair:nth-child(1){animation-delay:.5s}
-.stair:nth-child(2){animation-delay:.65s}
-.stair:nth-child(3){animation-delay:.8s}
-.stair:nth-child(4){animation-delay:.95s}
-.stair:nth-child(5){animation-delay:1.1s}
-@keyframes grow{to{transform:scaleY(1)}}
-.climb{stroke-dasharray:520;stroke-dashoffset:520;animation:draw 1.6s var(--ease) 1.2s forwards}
+/* Rete di professionisti: un nucleo di soci collegati che si apre verso chi inizia */
+.hero-grid>:not(.hero-art){position:relative;z-index:1}
+.hero-art{position:absolute;top:0;right:0;bottom:0;width:62%;will-change:transform;-webkit-mask-image:linear-gradient(90deg,transparent,#000 40%);mask-image:linear-gradient(90deg,transparent,#000 40%)}
+.hero-art svg{width:100%;height:100%;display:block}
+.link{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1s var(--ease) var(--d) forwards}
+.link--gold{stroke:#dcc193;stroke-opacity:.7}
 @keyframes draw{to{stroke-dashoffset:0}}
-.peak{opacity:0;animation:fadein .5s 2.6s forwards}
-.peak-ring{transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-out 3s infinite}
-@keyframes fadein{to{opacity:1}}
-@keyframes pulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.6);opacity:0}}
-.art-label{position:absolute;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);opacity:.8;font-weight:700}
-.art-label--bottom{left:2%;bottom:-1.8rem}
-.art-label--top{right:0;top:-.4rem;color:var(--white)}
+.node,.hub{transform-box:fill-box;transform-origin:center;transform:scale(0);animation:pop .6s var(--ease) var(--d,.3s) forwards}
+@keyframes pop{to{transform:scale(1)}}
+.hub-ring{transform-box:fill-box;transform-origin:center;animation:pulse 2.8s ease-out 2.8s infinite}
+@keyframes pulse{0%{transform:scale(.7);opacity:.8}100%{transform:scale(2.6);opacity:0}}
 
 @media(max-width:860px){
   .hero{padding-top:110px}
   .hero-grid{grid-template-columns:1fr}
-  .hero-art{max-width:300px;margin-top:1rem}
+  .hero-art{width:100%;opacity:.4!important;-webkit-mask-image:none;mask-image:none}
   .stats div{padding-right:1.2rem;margin-right:1.2rem}
 }
 @media(max-width:540px){
