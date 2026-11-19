@@ -7,7 +7,7 @@
 
   grid.innerHTML = NL.members.map(m => `
     <article class="card member reveal">
-      <div class="member-avatar" aria-hidden="true">${initials(m.name)}${m.photo ? `<img src="${m.photo}" alt="" loading="lazy" onerror="this.remove()">` : ''}</div>
+      <div class="member-avatar" aria-hidden="true">${initials(m.name)}${m.photo ? `<img src="${NL.url(m.photo)}" alt="" loading="lazy" onerror="this.remove()">` : ''}</div>
       <h3>${m.name}</h3>
       <p class="member-company">${m.company}</p>
       <ul class="member-tags">${m.sectors.map(s => `<li>${s}</li>`).join('')}</ul>

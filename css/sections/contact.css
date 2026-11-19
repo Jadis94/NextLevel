@@ -58,3 +58,6 @@ form .btn:disabled{opacity:.7;cursor:progress}
 @media(max-width:540px){
   form{padding:1.4rem}
 }
+.contact-flyer{margin-top:1.4rem}
+.contact-flyer a{font-weight:700;color:var(--wine);text-decoration:underline;text-underline-offset:4px}
+.contact-flyer a:hover{color:var(--navy)}

@@ -1,0 +1,20 @@
+/* Pagina manifesto: introduzione, tre gruppi (Idee, Persone, Impatto) di principi, chiusura.
+   Barra bordeaux a sinistra e sigle in maiuscolo riprendono il volantino stampato. */
+.manifesto{padding:80px 0;counter-reset:principio}
+.manifesto .container{max-width:760px}
+.manifesto-intro{margin-bottom:3.5rem;font-family:var(--serif);font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.5;color:var(--navy)}
+.manifesto-group{margin-bottom:3rem}
+.manifesto-group-label{display:block;margin-bottom:1.4rem;font-size:.85rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--wine)}
+.manifesto-list{list-style:none;margin:0;padding:0}
+.manifesto-list li{position:relative;margin-bottom:1.8rem;padding:.2rem 0 .2rem 1.4rem;border-left:4px solid var(--wine);counter-increment:principio}
+.manifesto-list h2{font-size:clamp(1.25rem,2.3vw,1.6rem);margin-bottom:.45rem}
+.manifesto-list h2::before{content:counter(principio,decimal-leading-zero) " / ";font-family:var(--sans);font-size:.7em;font-weight:700;letter-spacing:.08em;color:var(--wine)}
+.manifesto-list p{color:#25344f;font-size:1.05rem}
+.manifesto-closing{margin:3.5rem 0 0;padding-top:2rem;border-top:2px solid var(--wine)}
+.manifesto-closing p{font-family:var(--serif);font-size:clamp(1.3rem,2.6vw,1.7rem);line-height:1.35;color:var(--navy)}
+.manifesto-closing small{display:block;margin-top:1rem;font-size:.85rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:600px){
+  .manifesto{padding:56px 0}
+}
+.manifesto-download{display:inline-block;margin-top:1.4rem;font-weight:700;color:var(--wine);text-decoration:underline;text-underline-offset:4px}
+.manifesto-download:hover{color:var(--navy)}

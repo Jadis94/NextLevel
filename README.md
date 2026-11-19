@@ -14,14 +14,15 @@ Sito web istituzionale dell'associazione **Next Level**, una rete di professioni
 
 ## Panoramica
 
-Il sito è composto da tre pagine statiche:
+Il sito è composto da pagine statiche:
 
 | Pagina | Descrizione |
 | --- | --- |
 | `index.html` | Home page: presentazione dell'associazione, attività, percorsi per tipologia di utente, eventi e FAQ. |
-| `membri.html` | Elenco dei membri dell'associazione. |
-| `contatti.html` | Pagina con il modulo per scriverci. |
-| `evento.html` | Pagina di dettaglio di un evento, selezionato tramite parametro (`evento.html?id=<id>`). |
+| `pages/membri.html` | Elenco dei membri dell'associazione. |
+| `pages/manifesto.html` | Manifesto dell'associazione: community di manager e ponte con le nuove generazioni. |
+| `pages/contatti.html` | Pagina con il modulo per scriverci. |
+| `pages/evento.html` | Pagina di dettaglio di un evento, selezionato tramite parametro (`pages/evento.html?id=<id>`). |
 
 Tecnologie impiegate: HTML5, CSS3 e JavaScript (ES6+), senza framework né dipendenze esterne e senza fase di compilazione.
 
@@ -33,11 +34,14 @@ Non è richiesta alcuna installazione. Per visualizzare il sito in locale è suf
 
 ```
 index.html              Home page
-membri.html             Pagina dei membri
-contatti.html           Pagina contatti con il modulo
-evento.html             Pagina di dettaglio degli eventi
+pages/
+  membri.html           Pagina dei membri
+  manifesto.html        Pagina del manifesto
+  contatti.html         Pagina contatti con il modulo
+  evento.html           Pagina di dettaglio degli eventi (evento.html?id=<id>)
 assets/
   logo.png              Logo e favicon
+  volantini/            Volantini scaricabili in PDF (link da manifesto e contatti)
   members/              Fotografie dei membri
   eventi/               Immagini degli eventi
 css/
@@ -76,11 +80,12 @@ js/
 | Eventi (card e pagina di dettaglio) | `js/data/events.js` |
 | Frasi a rotazione, indirizzo email di destinazione | `js/data/site.js` |
 | Testi dei profili "Sono…" | `js/data/personas.js` |
-| Testi delle sezioni | `index.html`, `membri.html` |
+| Testi delle sezioni | `index.html`, `pages/` |
 | Colori e caratteri tipografici | `css/core/tokens.css` |
+| Volantini scaricabili | Salvare il PDF in `assets/volantini/` e collegarlo dalla pagina desiderata |
 | Fotografia di un membro | Salvare il file in `assets/members/` con il nome indicato nel campo `photo` del membro in `js/data/members.js` |
 
-Per aggiungere un evento è sufficiente inserire un nuovo elemento nell'elenco di `js/data/events.js`, con un `id` univoco: la card nella home e la pagina `evento.html?id=<id>` vengono generate automaticamente. Il banner dell'evento va salvato in `assets/eventi/`.
+Per aggiungere un evento è sufficiente inserire un nuovo elemento nell'elenco di `js/data/events.js`, con un `id` univoco: la card nella home e la pagina `pages/evento.html?id=<id>` vengono generate automaticamente. Il banner dell'evento va salvato in `assets/eventi/`.
 
 Se la fotografia di un membro non è disponibile, la scheda mostra automaticamente le iniziali.
 
@@ -90,8 +95,9 @@ L'invio del modulo apre il programma di posta predefinito dell'utente con un mes
 
 ## Convenzioni di sviluppo
 
-- I file JavaScript sono script classici (non moduli ES) e vengono caricati in ordine al termine di `index.html` e `membri.html`. I file in `js/data/` vanno caricati prima degli altri script, con `site.js` per primo, poiché espongono i dati tramite `window.NextLevel`. Ogni pagina carica solo i file che le servono.
+- I file JavaScript sono script classici (non moduli ES) e vengono caricati in ordine al termine di ogni pagina. I file in `js/data/` vanno caricati prima degli altri script, con `site.js` per primo, poiché espongono i dati tramite `window.NextLevel`. Ogni pagina carica solo i file che le servono.
 - L'ordine delle importazioni in `css/main.css` è significativo: `core/reveal.css` e `core/accessibility.css` devono rimanere in coda.
+- I percorsi dei file nei dati (`js/data/*.js`, ad esempio `assets/members/foto.jpg`) si scrivono a partire dalla radice del sito; nel codice vanno passati da `NextLevel.url(...)`, che li risolve sia dalla home sia dalle pagine in `pages/`. Le pagine in `pages/` puntano a CSS, JS e immagini con `../`.
 - Gli stati dinamici sono espressi con classi con prefisso `is-` (ad esempio `is-active`, `is-visible`).
 - Le immagini vanno ottimizzate prima dell'inserimento, in particolare le fotografie dei membri e il logo.
 

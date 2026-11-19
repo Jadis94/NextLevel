@@ -22,7 +22,7 @@
       lead.classList.remove('is-swapping');
     }, 220);
 
-    ctaLink.href = persona ? 'contatti.html?profilo=' + key : defaults.href;
+    ctaLink.href = persona ? 'pages/contatti.html?profilo=' + key : defaults.href;
     if (persona) NL.selectTab(persona.tab);
   }
 

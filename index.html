@@ -24,11 +24,12 @@
     <nav>
       <ul id="menu">
         <li><a href="#chi-siamo">Chi siamo e cosa facciamo</a></li>
-        <li><a href="membri.html">Membri</a></li>
+        <li><a href="pages/membri.html">Membri</a></li>
+        <li><a href="pages/manifesto.html">Manifesto</a></li>
         <li><a href="#per-chi">Per te</a></li>
         <li><a href="#eventi">Eventi</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="contatti.html" class="btn btn-primary">Unisciti</a></li>
+        <li><a href="pages/contatti.html" class="btn btn-primary">Unisciti</a></li>
       </ul>
     </nav>
   </div>
@@ -48,7 +49,7 @@
         <button type="button" class="persona-chip" data-persona="ente" aria-pressed="false">un'università o un'azienda</button>
       </div>
       <div class="hero-actions">
-        <a href="contatti.html" class="btn btn-primary"><span id="hero-cta-text">Entra nella community</span> <span class="btn-arrow" aria-hidden="true">→</span></a>
+        <a href="pages/contatti.html" class="btn btn-primary"><span id="hero-cta-text">Entra nella community</span> <span class="btn-arrow" aria-hidden="true">→</span></a>
         <a href="#cosa-facciamo" class="btn btn-ghost">Scopri cosa facciamo</a>
       </div>
       <div class="stats">
@@ -417,12 +418,14 @@
   </div>
 </section>
 
+<!-- Ticker rimosso temporaneamente
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
     <span>Networking</span><span>Speech</span><span>Formazione</span><span>Community</span><span>Università</span><span>Workshop</span><span>Professionisti</span>
     <span>Networking</span><span>Speech</span><span>Formazione</span><span>Community</span><span>Università</span><span>Workshop</span><span>Professionisti</span>
   </div>
 </div>
+-->
 
 <section class="about" id="chi-siamo">
   <div class="container">
@@ -433,7 +436,10 @@
       <p>Next Level nasce con due scopi: creare una rete di professionisti e, attraverso quella rete, portare esperienza e competenze a chi sta costruendo il proprio percorso.</p>
       <p>I nostri soci sono in gran parte professionisti o futuri professionisti. Sono loro a tenere speech, talk e momenti di formazione rivolti a studenti, laureandi, laureati e neolavoratori, dentro e fuori l'università.</p>
       <p><strong>Una rete che cresce insieme e restituisce valore a chi arriva dopo.</strong></p>
-      <a href="membri.html" class="btn btn-dark">Conosci i membri <span class="btn-arrow" aria-hidden="true">→</span></a>
+      <div class="about-actions">
+        <a href="pages/membri.html" class="btn btn-dark">Conosci i membri <span class="btn-arrow" aria-hidden="true">→</span></a>
+        <a href="pages/manifesto.html" class="btn btn-outline">Leggi il manifesto <span class="btn-arrow" aria-hidden="true">→</span></a>
+      </div>
     </div>
     <div class="bridge reveal" aria-hidden="true">
       <div class="side"><span class="dot"></span><div><strong>Professionisti</strong><small>Soci e futuri professionisti</small></div></div>
@@ -504,7 +510,7 @@
           <li>Workshop e formazione, in università e fuori</li>
           <li>Networking e contatti utili per entrare nel mondo del lavoro</li>
         </ul>
-        <a href="contatti.html?profilo=stud" class="btn btn-dark">Partecipa agli eventi</a>
+        <a href="pages/contatti.html?profilo=stud" class="btn btn-dark">Partecipa agli eventi</a>
       </div>
       <div class="panel" id="tab-pro" role="tabpanel" aria-labelledby="t-pro" tabindex="0">
         <ul>
@@ -513,7 +519,7 @@
           <li>Proponi o tieni speech e talk per studenti e neolavoratori</li>
           <li>Partecipa a eventi di networking e formazione</li>
         </ul>
-        <a href="contatti.html?profilo=pro" class="btn btn-dark">Entra nella rete</a>
+        <a href="pages/contatti.html?profilo=pro" class="btn btn-dark">Entra nella rete</a>
       </div>
       <div class="panel" id="tab-enti" role="tabpanel" aria-labelledby="t-enti" tabindex="0">
         <ul>
@@ -522,7 +528,7 @@
           <li>Eventi di orientamento su misura</li>
           <li>Collaborazioni e progetti condivisi</li>
         </ul>
-        <a href="contatti.html?profilo=ente" class="btn btn-dark">Collaboriamo</a>
+        <a href="pages/contatti.html?profilo=ente" class="btn btn-dark">Collaboriamo</a>
       </div>
     </div>
   </div>
@@ -557,7 +563,7 @@
       <h2>I prossimi <em>appuntamenti.</em></h2>
     </div>
     <div class="cards events-grid" id="events-list"></div>
-    <div class="events-note reveal"><span>Altri appuntamenti saranno annunciati a breve.</span><a href="contatti.html">Scrivici per ricevere gli aggiornamenti →</a></div>
+    <div class="events-note reveal"><span>Altri appuntamenti saranno annunciati a breve.</span><a href="pages/contatti.html">Scrivici per ricevere gli aggiornamenti →</a></div>
   </div>
 </section>
 
@@ -580,7 +586,7 @@
   <span class="cta-band-watermark" aria-hidden="true">COMMUNITY</span>
   <div class="container reveal">
     <h2>Pronto a entrare nella <em>rete?</em></h2>
-    <a href="contatti.html" class="btn btn-primary">Entra nella community <span class="btn-arrow" aria-hidden="true">→</span></a>
+    <a href="pages/contatti.html" class="btn btn-primary">Entra nella community <span class="btn-arrow" aria-hidden="true">→</span></a>
   </div>
 </section>
 
@@ -589,6 +595,7 @@
 <footer>
   <div class="container">
     <a href="#home" class="logo"><img src="assets/logo.png" alt="" class="logo-img">Next<span>Level</span></a>
+    <p class="footer-motto">Ideas. People. Impact.</p>
     <p>© <span id="footer-year"></span> Next Level – Associazione. Dove il talento incontra l'esperienza.</p>
     <p><a href="#privacy" data-privacy>Informativa sulla privacy</a></p>
   </div>

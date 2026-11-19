@@ -5,10 +5,10 @@
 
   list.innerHTML = NL.events.map(e => `
     <article class="card event reveal">
-      ${e.image ? `<img class="event-cover" src="${e.image}" alt="" loading="lazy">` : ''}
+      ${e.image ? `<img class="event-cover" src="${NL.url(e.image)}" alt="" loading="lazy">` : ''}
       <div class="date">${e.date}<small>${e.tag}</small></div>
       <div class="body">
-        <h3><a class="event-link" href="evento.html?id=${encodeURIComponent(e.id)}">${e.title}</a></h3>
+        <h3><a class="event-link" href="pages/evento.html?id=${encodeURIComponent(e.id)}">${e.title}</a></h3>
         <p>${e.summary}</p>
         <p class="where">📍 ${e.where}</p>
         <span class="event-more" aria-hidden="true">Scopri i dettagli →</span>

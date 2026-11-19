@@ -9,9 +9,9 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contatti – Next Level">
 <meta property="og:description" content="Scrivici per entrare nella rete di Next Level.">
-<meta property="og:image" content="assets/logo.png">
-<link rel="icon" type="image/png" href="assets/logo.png">
-<link rel="stylesheet" href="css/main.css">
+<meta property="og:image" content="../assets/logo.png">
+<link rel="icon" type="image/png" href="../assets/logo.png">
+<link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 
@@ -19,15 +19,16 @@
 <div class="scroll-progress" id="scroll-progress"></div>
 <header>
   <div class="container nav">
-    <a href="index.html" class="logo"><img src="assets/logo.png" alt="" class="logo-img">Next<span>Level</span></a>
+    <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="" class="logo-img">Next<span>Level</span></a>
     <button class="burger" aria-label="Apri il menu" aria-expanded="false"><span></span></button>
     <nav>
       <ul id="menu">
-        <li><a href="index.html#chi-siamo">Chi siamo e cosa facciamo</a></li>
+        <li><a href="../index.html#chi-siamo">Chi siamo e cosa facciamo</a></li>
         <li><a href="membri.html">Membri</a></li>
-        <li><a href="index.html#per-chi">Per te</a></li>
-        <li><a href="index.html#eventi">Eventi</a></li>
-        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="manifesto.html">Manifesto</a></li>
+        <li><a href="../index.html#per-chi">Per te</a></li>
+        <li><a href="../index.html#eventi">Eventi</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
         <li><a href="contatti.html" aria-current="page" class="btn btn-primary">Unisciti</a></li>
       </ul>
     </nav>
@@ -52,6 +53,7 @@
         <li><span>2</span><div><strong>Si apre la tua posta</strong><small>Il messaggio è già pronto: ti basta premere "Invia".</small></div></li>
         <li><span>3</span><div><strong>Ti rispondiamo</strong><small>Ti spieghiamo come entrare, partecipare o proporre un talk.</small></div></li>
       </ol>
+      <p class="contact-flyer"><a href="../assets/volantini/volantino-next-level.pdf" download>Scarica il volantino di Next Level (PDF)</a></p>
     </div>
     <form id="contact-form" class="reveal" novalidate>
       <div class="form-row">
@@ -71,7 +73,7 @@
       <div class="field"><label for="contact-org">Università, azienda o settore <span class="optional">(facoltativo)</span></label><input id="contact-org" autocomplete="organization" placeholder="Es. Politecnico, Telco, Energia"></div>
       <div class="field"><label for="contact-message">Messaggio</label><textarea id="contact-message" required minlength="10" maxlength="1000" placeholder="Raccontaci chi sei e come vorresti partecipare." aria-describedby="err-contact-message"></textarea>
         <div class="field-foot"><small class="field-error" id="err-contact-message"></small><small class="field-count" id="message-count" aria-hidden="true">0 / 1000</small></div></div>
-      <div class="field"><label class="consent"><input type="checkbox" id="contact-consent" required aria-describedby="err-contact-consent"> <span>Ho letto l'<a href="index.html#privacy" target="_blank" rel="noopener">informativa sulla privacy</a> e acconsento al trattamento dei miei dati per essere ricontattato.</span></label><small class="field-error" id="err-contact-consent"></small></div>
+      <div class="field"><label class="consent"><input type="checkbox" id="contact-consent" required aria-describedby="err-contact-consent"> <span>Ho letto l'<a href="../index.html#privacy" target="_blank" rel="noopener">informativa sulla privacy</a> e acconsento al trattamento dei miei dati per essere ricontattato.</span></label><small class="field-error" id="err-contact-consent"></small></div>
       <button class="btn btn-dark" type="submit" id="contact-submit"><span id="contact-submit-text">Invia messaggio</span> <span class="btn-arrow" aria-hidden="true">→</span></button>
       <div class="form-success" id="form-success" role="status" tabindex="-1">
         <div class="success-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
@@ -91,19 +93,20 @@
 
 <footer>
   <div class="container">
-    <a href="index.html" class="logo"><img src="assets/logo.png" alt="" class="logo-img">Next<span>Level</span></a>
+    <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="" class="logo-img">Next<span>Level</span></a>
+    <p class="footer-motto">Ideas. People. Impact.</p>
     <p>© <span id="footer-year"></span> Next Level – Associazione. Dove il talento incontra l'esperienza.</p>
-    <p><a href="index.html#privacy">Informativa sulla privacy</a></p>
+    <p><a href="../index.html#privacy">Informativa sulla privacy</a></p>
   </div>
 </footer>
 
 <button class="back-to-top" id="back-to-top" aria-label="Torna su"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
-<script src="js/data/site.js"></script>
-<script src="js/data/personas.js"></script>
-<script src="js/core/reveal.js"></script>
-<script src="js/core/navigation.js"></script>
-<script src="js/pages/contact-form.js"></script>
-<script src="js/core/footer.js"></script>
+<script src="../js/data/site.js"></script>
+<script src="../js/data/personas.js"></script>
+<script src="../js/core/reveal.js"></script>
+<script src="../js/core/navigation.js"></script>
+<script src="../js/pages/contact-form.js"></script>
+<script src="../js/core/footer.js"></script>
 </body>
 </html>

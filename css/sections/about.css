@@ -34,4 +34,4 @@
   .about-grid,.questions{grid-template-columns:1fr;gap:2.5rem}
 }
 
-.about-intro .btn{margin-top:1.4rem}
+.about-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.4rem}

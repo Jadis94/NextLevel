@@ -10,7 +10,7 @@
       <div class="container">
         <h1>Evento non trovato</h1>
         <p>L'evento che cerchi non esiste o non è più disponibile.</p>
-        <a class="btn btn-primary" href="index.html#eventi">Vai agli eventi</a>
+        <a class="btn btn-primary" href="../index.html#eventi">Vai agli eventi</a>
       </div>`;
     return;
   }
@@ -26,7 +26,7 @@
   container.innerHTML = `
     <section class="page-hero">
       <div class="container">
-        <a class="back-link" href="index.html#eventi">← Tutti gli eventi</a>
+        <a class="back-link" href="../index.html#eventi">← Tutti gli eventi</a>
         <span class="eyebrow">Evento · ${event.tag}</span>
         <h1>${event.title}</h1>
         <p class="event-when">📅 ${event.date}</p>
@@ -36,7 +36,7 @@
     <section class="event-detail">
       <div class="container event-layout">
         <div class="event-main">
-          ${event.image ? `<img class="event-banner" src="${event.image}" alt="${event.title}">` : ''}
+          ${event.image ? `<img class="event-banner" src="${NL.url(event.image)}" alt="${event.title}">` : ''}
           <h2>Di cosa si tratta</h2>
           ${event.description.map(p => `<p>${p}</p>`).join('')}
         </div>

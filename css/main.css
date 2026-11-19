@@ -6,7 +6,7 @@
 
 @import url("components/header.css");
 @import url("components/back-to-top.css");
-@import url("components/ticker.css");
+/* @import url("components/ticker.css"); */
 @import url("components/cards.css");
 
 @import url("sections/hero.css");
@@ -17,6 +17,7 @@
 @import url("sections/faq.css");
 @import url("sections/contact.css");
 @import url("sections/members.css");
+@import url("sections/manifesto.css");
 @import url("sections/event-detail.css");
 
 @import url("components/footer.css");
