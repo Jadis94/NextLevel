@@ -1,5 +1,5 @@
 /* Modulo contatti: controlla i campi e apre il programma di posta con un'email già strutturata */
-(function (NL) {
+window.NextLevel.ready(function (NL) {
   const form = document.getElementById('contact-form');
   const success = document.getElementById('form-success');
   const submitBtn = document.getElementById('contact-submit');
@@ -12,15 +12,15 @@
 
   const value = id => document.getElementById(id).value.trim();
 
-  // Messaggi di errore in italiano, uno per campo
+  // Messaggi di errore (italiano o inglese), uno per campo
   const checks = {
-    'contact-name': el => !el.value.trim() ? 'Scrivi il tuo nome e cognome.' : '',
-    'contact-email': el => !el.value.trim() ? "Scrivi la tua email."
-      : !el.validity.valid ? "Controlla l'indirizzo: manca qualcosa (es. nome@esempio.it)." : '',
-    'contact-phone': el => el.value.trim() && !/^\+?[\d\s().-]{6,}$/.test(el.value.trim()) ? 'Controlla il numero: usa solo cifre, spazi e il prefisso (es. +39 333 1234567).' : '',
-    'contact-message': el => !el.value.trim() ? 'Scrivi due righe su di te.'
-      : el.value.trim().length < 10 ? 'Aggiungi qualche parola in più (almeno 10 caratteri).' : '',
-    'contact-consent': el => !el.checked ? 'Serve il tuo consenso per poterti ricontattare.' : ''
+    'contact-name': el => !el.value.trim() ? NL.t('errName') : '',
+    'contact-email': el => !el.value.trim() ? NL.t('errEmailEmpty')
+      : !el.validity.valid ? NL.t('errEmailBad') : '',
+    'contact-phone': el => el.value.trim() && !/^\+?[\d\s().-]{6,}$/.test(el.value.trim()) ? NL.t('errPhone') : '',
+    'contact-message': el => !el.value.trim() ? NL.t('errMsgEmpty')
+      : el.value.trim().length < 10 ? NL.t('errMsgShort') : '',
+    'contact-consent': el => !el.checked ? NL.t('errConsent') : ''
   };
 
   function validate(id) {
@@ -44,7 +44,7 @@
   // Arrivando da "Sono…" o da una scheda di "Per te" (contatti.html?profilo=…) il modulo è già adattato
   const persona = NL.personas[new URLSearchParams(location.search).get('profilo')];
   if (persona) {
-    [...roleSelect.options].forEach((option, k) => { if (option.text === persona.role) roleSelect.selectedIndex = k; });
+    roleSelect.selectedIndex = persona.roleIndex;
     message.placeholder = persona.placeholder;
   }
 
@@ -104,11 +104,11 @@
     reopen.href = url;
 
     submitBtn.disabled = true;
-    submitText.textContent = 'Preparo il messaggio…';
+    submitText.textContent = NL.t('preparing');
     setTimeout(() => {
       location.href = url;
       submitBtn.disabled = false;
-      submitText.textContent = 'Invia messaggio';
+      submitText.textContent = NL.t('send');
       success.style.display = 'flex';
       success.focus();
     }, 350);
@@ -118,7 +118,7 @@
   document.getElementById('copy-email').addEventListener('click', e => {
     if (!navigator.clipboard) return;
     navigator.clipboard.writeText(NL.email).then(() => {
-      e.target.textContent = 'Indirizzo copiato ✓';
+      e.target.textContent = NL.t('copied');
     });
   });
-})(window.NextLevel);
+});

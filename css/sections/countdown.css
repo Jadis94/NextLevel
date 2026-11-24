@@ -1,0 +1,18 @@
+/* CONTO ALLA ROVESCIA verso il prossimo evento (fascia sotto l'hero) */
+.countdown{background:linear-gradient(120deg,var(--navy),#3b2040 70%,var(--wine));color:var(--white);padding:1.8rem 0;border-top:1px solid rgba(220,193,147,.25);border-bottom:1px solid rgba(220,193,147,.25)}
+.countdown[hidden]{display:none}
+.countdown-inner{display:flex;align-items:center;justify-content:space-between;gap:1.6rem 2.4rem;flex-wrap:wrap}
+.countdown-label{font-size:.76rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.countdown-title{font-family:var(--serif);font-size:clamp(1.15rem,2.4vw,1.6rem);margin-top:.2rem;max-width:30ch}
+.countdown-clock{display:flex;gap:.8rem;margin:0;padding:0;list-style:none}
+.countdown-clock li{min-width:4.2rem;text-align:center;padding:.6rem .4rem;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(220,193,147,.3)}
+.countdown-clock b{display:block;font-family:var(--serif);font-size:1.9rem;line-height:1.1;color:var(--gold);font-variant-numeric:tabular-nums}
+.countdown-clock span{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;opacity:.8}
+.countdown-actions{display:flex;gap:.7rem;flex-wrap:wrap}
+.countdown-actions .btn{padding:.7rem 1.4rem;font-size:.92rem}
+.countdown.is-live .countdown-clock{opacity:.6}
+@media(max-width:700px){
+  .countdown-inner{flex-direction:column;align-items:flex-start}
+  .countdown-clock{width:100%}
+  .countdown-clock li{flex:1;min-width:0}
+}

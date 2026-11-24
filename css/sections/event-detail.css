@@ -15,7 +15,13 @@
 .event-aside dt{font-size:.74rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--wine);margin-bottom:.15rem}
 .event-aside dd{font-size:.97rem;color:var(--navy)}
 .event-aside dd a{display:block;margin-top:.2rem;font-weight:700;color:var(--wine)}
-.event-aside .btn{margin-top:1.5rem;width:100%;justify-content:center}
+.event-actions{display:grid;gap:.7rem;margin-top:1.5rem}
+.event-actions .btn{width:100%;justify-content:center}
+.event-ended{font-weight:800;color:var(--wine);text-align:center;padding:.6rem;border-radius:12px;background:var(--paper)}
+.event-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.8rem;margin-bottom:1.5rem}
+.event-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.event-slides{margin:0 0 1.5rem 1.2rem}
+.event-slides a{color:var(--wine);font-weight:700}
 
 /* evento non trovato */
 #event-detail>.container{padding:150px 0 90px}

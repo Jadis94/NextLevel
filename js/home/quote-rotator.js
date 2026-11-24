@@ -1,5 +1,5 @@
 /* Frasi a rotazione con puntini di navigazione */
-(function (NL) {
+window.NextLevel.ready(function (NL) {
   const quote = document.getElementById('quote-text');
   const dots = document.getElementById('quote-dots');
   let current = 0;
@@ -22,11 +22,11 @@
 
   NL.phrases.forEach((_, n) => {
     const dot = document.createElement('button');
-    dot.setAttribute('aria-label', 'Frase ' + (n + 1));
+    dot.setAttribute('aria-label', NL.t('quote') + ' ' + (n + 1));
     dot.onclick = () => { show(n); restart(); };
     dots.appendChild(dot);
   });
 
   dots.children[0].classList.add('is-active');
   restart();
-})(window.NextLevel);
+});

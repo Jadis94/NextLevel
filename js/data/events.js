@@ -1,28 +1,26 @@
-/* Eventi. Ogni evento ha una card nella home e una pagina di dettaglio: evento.html?id=<id>
-     id            identificativo univoco (usato nell'indirizzo della pagina)
-     date, tag, title, summary, where   testi mostrati nella card
-     image         banner (facoltativo), da salvare in assets/eventi/
-     description   paragrafi della pagina di dettaglio
-     facts         schede informative: label, value e, facoltativi, url + urlLabel */
+/* Eventi: struttura e indirizzi. I TESTI (titolo, data, descrizione, schede) sono in locales/it.po e locales/en.po,
+   nelle chiavi event.<id>.… (vedi la sezione "Eventi" dei due file).
+   Ogni evento ha una card nella home e una pagina di dettaglio: evento.html?id=<id>
+     id          identificativo univoco (usato nell'indirizzo della pagina e nelle chiavi dei testi)
+     start       inizio con fuso orario, es. '2026-12-04T18:30:00+01:00' (+01:00 inverno, +02:00 estate).
+                 Serve per il conto alla rovescia e per sapere se l'evento è futuro o passato.
+     end         fine (facoltativa, usata nel file del calendario; se manca si assumono 2 ore)
+     image       banner (facoltativo), da salvare in assets/eventi/
+     facts       una voce per ogni scheda informativa, nello stesso ordine dei testi event.<id>.fact.N.…;
+                 si indica solo l'indirizzo (url) delle schede che hanno un link
+     register    modulo di iscrizione (facoltativo: se manca si usa NextLevel.registerUrl)
+   Per un evento passato si possono aggiungere nei .po i paragrafi event.<id>.recap.0, .1, …
+   e qui gallery (lista di percorsi in assets/eventi/) e slides (lista di { label, url }). */
 window.NextLevel.events = [
   {
     id: 'aperitivo-introduttivo',
-    date: '4 dicembre 2026 · ore 18:30',
-    tag: 'Networking',
-    title: "Aperitivo introduttivo dell'associazione",
-    summary: 'Una serata per conoscersi, fare networking e confrontarsi direttamente sulle idee e sugli obiettivi di Next Level. Evento aperto a tutti.',
-    where: 'Triplo Cocktail Bar – Via Chiabrera 84, Roma',
+    start: '2026-12-04T18:30:00+01:00',
     image: 'assets/eventi/aperitivo-4-dicembre.jpg',
-    description: [
-      "Next Level inaugura le proprie attività con un aperitivo introduttivo, pensato come momento di incontro, networking e confronto sulle idee e sugli obiettivi dell'associazione. La partecipazione è aperta a tutti.",
-      "L'evento si svolge presso il Triplo Cocktail Bar, in una sala interamente riservata: un contesto informale, ideale per conoscersi e scambiare opinioni.",
-      "Nel corso della serata saranno disponibili materiali informativi con i principali punti del progetto e le finalità dell'associazione."
-    ],
     facts: [
-      { label: 'Quando', value: '4 dicembre 2026, dalle ore 18:30' },
-      { label: 'Dove', value: 'Triplo Cocktail Bar, Via Chiabrera 84, Roma', url: 'https://triploroma.it/', urlLabel: 'Sito del locale' },
-      { label: 'Come arrivare', value: 'A pochi minuti a piedi dalla fermata Metro B San Paolo', url: 'https://www.google.com/maps/search/?api=1&query=Triplo+Cocktail+Bar+Via+Chiabrera+84+Roma', urlLabel: 'Apri su Google Maps' },
-      { label: 'Formula', value: 'Aperitivo a 15 € a persona: 1 cocktail e 4 tapas' }
+      {},
+      { url: 'https://triploroma.it/' },
+      { url: 'https://www.google.com/maps/search/?api=1&query=Triplo+Cocktail+Bar+Via+Chiabrera+84+Roma' },
+      {}
     ]
   }
 ];

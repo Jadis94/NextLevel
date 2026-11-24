@@ -3,33 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Next Level – Dove il talento incontra l'esperienza</title>
-<meta name="description" content="Next Level è un'associazione che crea una rete di professionisti e ne porta l'esperienza a studenti, laureandi, laureati e neolavoratori: networking, talk e formazione.">
+<title data-i18n="home.meta.next-level-dove-il">Next Level – Dove il talento incontra l'esperienza</title>
+<meta data-i18n-content="home.meta.content-next-level-e-un" name="description" content="Next Level è un'associazione che crea una rete di professionisti e ne porta l'esperienza a studenti, laureandi, laureati e neolavoratori: networking, talk e formazione.">
 <meta name="theme-color" content="#0c1f3d">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Next Level – Dove il talento incontra l'esperienza">
-<meta property="og:description" content="Una rete di professionisti che fa networking e formazione per studenti, laureandi, laureati e neolavoratori.">
+<meta data-i18n-content="home.meta.content-next-level-dove-il" property="og:title" content="Next Level – Dove il talento incontra l'esperienza">
+<meta data-i18n-content="home.meta.content-una-rete-di-professionisti" property="og:description" content="Una rete di professionisti che fa networking e formazione per studenti, laureandi, laureati e neolavoratori.">
 <meta property="og:image" content="assets/logo.png">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="css/main.css">
+<script src="js/core/lang.js"></script>
 </head>
 <body>
 
-<a class="skip" href="#contenuto">Vai al contenuto</a>
+<a data-i18n="common.page.vai-al-contenuto" class="skip" href="#contenuto">Vai al contenuto</a>
 <div class="scroll-progress" id="scroll-progress"></div>
 <header>
   <div class="container nav">
     <a href="#home" class="logo"><img src="assets/logo.png" alt="" class="logo-img">Next<span>Level</span></a>
-    <button class="burger" aria-label="Apri il menu" aria-expanded="false"><span></span></button>
+    <button data-i18n-aria-label="common.header.aria-label-apri-il-menu" class="burger" aria-label="Apri il menu" aria-expanded="false"><span></span></button>
     <nav>
       <ul id="menu">
-        <li><a href="#chi-siamo">Chi siamo e cosa facciamo</a></li>
-        <li><a href="pages/membri.html">Membri</a></li>
-        <li><a href="pages/manifesto.html">Manifesto</a></li>
-        <li><a href="#per-chi">Per te</a></li>
-        <li><a href="#eventi">Eventi</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="pages/contatti.html" class="btn btn-primary">Unisciti</a></li>
+        <li><a data-i18n="common.nav.chi-siamo-e-cosa" href="#chi-siamo">Chi siamo e cosa facciamo</a></li>
+        <li><a data-i18n="common.nav.membri" href="pages/membri.html">Membri</a></li>
+        <li><a data-i18n="common.nav.manifesto" href="pages/manifesto.html">Manifesto</a></li>
+        <li><a data-i18n="common.nav.per-te" href="#per-chi">Per te</a></li>
+        <li><a data-i18n="common.nav.eventi" href="#eventi">Eventi</a></li>
+        <li><a data-i18n="common.nav.faq" href="#faq">FAQ</a></li>
+        <li><a data-i18n="common.nav.unisciti" href="pages/contatti.html" class="btn btn-primary">Unisciti</a></li>
+        <li><a data-i18n="common.nav.en" data-i18n-aria-label="common.nav.aria-label-passa-alla-versione-inglese" class="lang-link" href="#" data-lang-toggle hreflang="en" lang="en" aria-label="Passa alla versione inglese">EN</a></li>
       </ul>
     </nav>
   </div>
@@ -39,23 +41,23 @@
 <section class="hero" id="home">
   <div class="container hero-grid">
     <div>
-      <span class="eyebrow">Rete di professionisti</span>
-      <h1>Dove il talento incontra <em>l'esperienza.</em></h1>
-      <p class="lead" id="hero-lead">Una rete di professionisti e futuri professionisti. Organizziamo eventi di networking e formazione, dentro e fuori l'università, per studenti, laureandi, laureati e neolavoratori.</p>
-      <div class="persona-picker" role="group" aria-label="Personalizza il sito">
-        <span class="persona-question">Sono…</span>
-        <button type="button" class="persona-chip" data-persona="stud" aria-pressed="false">uno studente o neolavoratore</button>
-        <button type="button" class="persona-chip" data-persona="pro" aria-pressed="false">un professionista</button>
-        <button type="button" class="persona-chip" data-persona="ente" aria-pressed="false">un'università o un'azienda</button>
+      <span data-i18n="home.home.rete-di-professionisti" class="eyebrow">Rete di professionisti</span>
+      <h1 data-i18n="home.home.dove-il-talento-incontra">Dove il talento incontra <em>l'esperienza.</em></h1>
+      <p data-i18n="home.home.una-rete-di-professionisti" class="lead" id="hero-lead">Una rete di professionisti e futuri professionisti. Organizziamo eventi di networking e formazione, dentro e fuori l'università, per studenti, laureandi, laureati e neolavoratori.</p>
+      <div data-i18n-aria-label="home.home.aria-label-personalizza-il-sito" class="persona-picker" role="group" aria-label="Personalizza il sito">
+        <span data-i18n="home.home.sono" class="persona-question">Sono…</span>
+        <button data-i18n="home.home.uno-studente-o-neolavoratore" type="button" class="persona-chip" data-persona="stud" aria-pressed="false">uno studente o neolavoratore</button>
+        <button data-i18n="home.home.un-professionista" type="button" class="persona-chip" data-persona="pro" aria-pressed="false">un professionista</button>
+        <button data-i18n="home.home.un-universita-o-un" type="button" class="persona-chip" data-persona="ente" aria-pressed="false">un'università o un'azienda</button>
       </div>
       <div class="hero-actions">
-        <a href="pages/contatti.html" class="btn btn-primary"><span id="hero-cta-text">Entra nella community</span> <span class="btn-arrow" aria-hidden="true">→</span></a>
-        <a href="#cosa-facciamo" class="btn btn-ghost">Scopri cosa facciamo</a>
+        <a href="pages/contatti.html" class="btn btn-primary"><span data-i18n="home.home.entra-nella-community" id="hero-cta-text">Entra nella community</span> <span class="btn-arrow" aria-hidden="true">→</span></a>
+        <a data-i18n="home.home.scopri-cosa-facciamo" href="#cosa-facciamo" class="btn btn-ghost">Scopri cosa facciamo</a>
       </div>
       <div class="stats">
-        <div><strong>Rete</strong><span>di professionisti</span></div>
-        <div><strong>Speech</strong><span>e talk di esperti</span></div>
-        <div><strong>Formazione</strong><span>in università e fuori</span></div>
+        <div><strong data-i18n="home.home.rete">Rete</strong><span data-i18n="home.home.di-professionisti">di professionisti</span></div>
+        <div><strong data-i18n="home.home.speech">Speech</strong><span data-i18n="home.home.e-talk-di-esperti">e talk di esperti</span></div>
+        <div><strong data-i18n="home.home.formazione">Formazione</strong><span data-i18n="home.home.in-universita-e-fuori">in università e fuori</span></div>
       </div>
     </div>
     <div class="hero-art" aria-hidden="true">
@@ -418,6 +420,25 @@
   </div>
 </section>
 
+<section class="countdown" id="countdown" aria-labelledby="countdown-label" hidden>
+  <div class="container countdown-inner">
+    <div>
+      <p data-i18n="home.countdown.prossimo-evento" class="countdown-label" id="countdown-label">Prossimo evento</p>
+      <p class="countdown-title" id="countdown-title"></p>
+    </div>
+    <ul data-i18n-aria-label="home.countdown.aria-label-tempo-mancante-al-prossimo" class="countdown-clock" role="timer" aria-label="Tempo mancante al prossimo evento">
+      <li><b id="cd-days">0</b><span data-i18n="home.countdown.giorni">giorni</span></li>
+      <li><b id="cd-hours">00</b><span data-i18n="home.countdown.ore">ore</span></li>
+      <li><b id="cd-minutes">00</b><span data-i18n="home.countdown.minuti">minuti</span></li>
+      <li><b id="cd-seconds">00</b><span data-i18n="home.countdown.secondi">secondi</span></li>
+    </ul>
+    <div class="countdown-actions">
+      <a data-i18n="home.countdown.iscriviti" class="btn btn-primary" id="countdown-register" href="#" target="_blank" rel="noopener noreferrer">Iscriviti <span class="btn-arrow" aria-hidden="true">→</span></a>
+      <a data-i18n="home.countdown.dettagli" class="btn btn-ghost" id="countdown-details" href="#">Dettagli</a>
+    </div>
+  </div>
+</section>
+
 <!-- Ticker rimosso temporaneamente
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
@@ -431,60 +452,60 @@
   <div class="container">
     <div class="about-grid">
     <div class="about-intro reveal">
-      <span class="eyebrow">Chi siamo e cosa facciamo</span>
-      <h2>Una rete di <em>professionisti</em> che condivide esperienza.</h2>
-      <p>Next Level nasce con due scopi: creare una rete di professionisti e, attraverso quella rete, portare esperienza e competenze a chi sta costruendo il proprio percorso.</p>
-      <p>I nostri soci sono in gran parte professionisti o futuri professionisti. Sono loro a tenere speech, talk e momenti di formazione rivolti a studenti, laureandi, laureati e neolavoratori, dentro e fuori l'università.</p>
-      <p><strong>Una rete che cresce insieme e restituisce valore a chi arriva dopo.</strong></p>
+      <span data-i18n="common.chi-siamo.chi-siamo-e-cosa" class="eyebrow">Chi siamo e cosa facciamo</span>
+      <h2 data-i18n="home.chi-siamo.una-rete-di-professionisti">Una rete di <em>professionisti</em> che condivide esperienza.</h2>
+      <p data-i18n="home.chi-siamo.next-level-nasce-con">Next Level nasce con due scopi: creare una rete di professionisti e, attraverso quella rete, portare esperienza e competenze a chi sta costruendo il proprio percorso.</p>
+      <p data-i18n="home.chi-siamo.i-nostri-soci-sono">I nostri soci sono in gran parte professionisti o futuri professionisti. Sono loro a tenere speech, talk e momenti di formazione rivolti a studenti, laureandi, laureati e neolavoratori, dentro e fuori l'università.</p>
+      <p><strong data-i18n="home.chi-siamo.una-rete-che-cresce">Una rete che cresce insieme e restituisce valore a chi arriva dopo.</strong></p>
       <div class="about-actions">
-        <a href="pages/membri.html" class="btn btn-dark">Conosci i membri <span class="btn-arrow" aria-hidden="true">→</span></a>
-        <a href="pages/manifesto.html" class="btn btn-outline">Leggi il manifesto <span class="btn-arrow" aria-hidden="true">→</span></a>
+        <a data-i18n="home.chi-siamo.conosci-i-membri" href="pages/membri.html" class="btn btn-dark">Conosci i membri <span class="btn-arrow" aria-hidden="true">→</span></a>
+        <a data-i18n="home.chi-siamo.leggi-il-manifesto" href="pages/manifesto.html" class="btn btn-outline">Leggi il manifesto <span class="btn-arrow" aria-hidden="true">→</span></a>
       </div>
     </div>
     <div class="bridge reveal" aria-hidden="true">
-      <div class="side"><span class="dot"></span><div><strong>Professionisti</strong><small>Soci e futuri professionisti</small></div></div>
+      <div class="side"><span class="dot"></span><div><strong data-i18n="home.chi-siamo.professionisti">Professionisti</strong><small data-i18n="home.chi-siamo.soci-e-futuri-professionisti">Soci e futuri professionisti</small></div></div>
       <div class="line"></div>
-      <div class="side"><span class="dot dot--accent"></span><div><strong>Next Level</strong><small>Networking, speech, formazione</small></div></div>
+      <div class="side"><span class="dot dot--accent"></span><div><strong data-i18n="home.chi-siamo.next-level">Next Level</strong><small data-i18n="home.chi-siamo.networking-speech-formazione">Networking, speech, formazione</small></div></div>
       <div class="line"></div>
-      <div class="side"><span class="dot"></span><div><strong>Chi sta iniziando</strong><small>Studenti, laureandi, laureati, neolavoratori</small></div></div>
+      <div class="side"><span class="dot"></span><div><strong data-i18n="home.chi-siamo.chi-sta-iniziando">Chi sta iniziando</strong><small data-i18n="home.chi-siamo.studenti-laureandi-laureati-neolavoratori">Studenti, laureandi, laureati, neolavoratori</small></div></div>
     </div>
     </div>
 
     <div class="about-offer" id="cosa-facciamo">
     <div class="reveal section-head">
-      <span class="eyebrow">Cosa facciamo</span>
-      <h2>Le connessioni che aprono <em>opportunità.</em></h2>
+      <span data-i18n="common.chi-siamo.cosa-facciamo" class="eyebrow">Cosa facciamo</span>
+      <h2 data-i18n="home.chi-siamo.le-connessioni-che-aprono">Le connessioni che aprono <em>opportunità.</em></h2>
     </div>
     <div class="cards cards--compact">
       <article class="card reveal">
         <div class="icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Networking</h3>
-        <p>Occasioni per conoscersi, scambiare contatti e far nascere collaborazioni tra tutte le persone che partecipano ai nostri eventi.</p>
+        <h3 data-i18n="home.chi-siamo.networking">Networking</h3>
+        <p data-i18n="home.chi-siamo.occasioni-per-conoscersi-scambiare">Occasioni per conoscersi, scambiare contatti e far nascere collaborazioni tra tutte le persone che partecipano ai nostri eventi.</p>
       </article>
       <article class="card reveal">
         <div class="icon"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
-        <h3>Formazione nelle università</h3>
-        <p>Speech, talk e workshop tenuti da professionisti dentro gli atenei, per portare il mondo del lavoro in aula.</p>
+        <h3 data-i18n="home.chi-siamo.formazione-nelle-universita">Formazione nelle università</h3>
+        <p data-i18n="home.chi-siamo.speech-talk-e-workshop">Speech, talk e workshop tenuti da professionisti dentro gli atenei, per portare il mondo del lavoro in aula.</p>
       </article>
       <article class="card reveal">
         <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v4M12 11.5 6 17M12 11.5l6 5.5"/></svg></div>
-        <h3>La rete di professionisti</h3>
-        <p>Una community di professionisti e futuri professionisti che condividono competenze, esperienze e relazioni.</p>
+        <h3 data-i18n="home.chi-siamo.la-rete-di-professionisti">La rete di professionisti</h3>
+        <p data-i18n="home.chi-siamo.una-community-di-professionisti">Una community di professionisti e futuri professionisti che condividono competenze, esperienze e relazioni.</p>
       </article>
       <article class="card reveal">
         <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .8-5.3 4.9 1.6 7.3L12 18.2 5.7 22l1.6-7.3L2 9.8 9 9z"/></svg></div>
-        <h3>Formazione anche fuori dall'università</h3>
-        <p>Speech, workshop e incontri aperti a laureandi, laureati e neolavoratori, in aziende e spazi esterni, per sviluppare competenze professionali e soft skill.</p>
+        <h3 data-i18n="home.chi-siamo.formazione-anche-fuori-dall">Formazione anche fuori dall'università</h3>
+        <p data-i18n="home.chi-siamo.speech-workshop-e-incontri">Speech, workshop e incontri aperti a laureandi, laureati e neolavoratori, in aziende e spazi esterni, per sviluppare competenze professionali e soft skill.</p>
       </article>
     </div>
 
     <div class="questions reveal">
-      <h3>Domande concrete, risposte da chi lo vive ogni giorno.</h3>
+      <h3 data-i18n="home.chi-siamo.domande-concrete-risposte-da">Domande concrete, risposte da chi lo vive ogni giorno.</h3>
       <ul>
-        <li>Cosa significa lavorare in una grande realtà?</li>
-        <li>Come si diventa un leader?</li>
-        <li>Quali competenze servono davvero?</li>
-        <li>Come si costruisce una carriera nella consulenza, nel finance o nell'IT?</li>
+        <li data-i18n="home.chi-siamo.cosa-significa-lavorare-in">Cosa significa lavorare in una grande realtà?</li>
+        <li data-i18n="home.chi-siamo.come-si-diventa-un">Come si diventa un leader?</li>
+        <li data-i18n="home.chi-siamo.quali-competenze-servono-davvero">Quali competenze servono davvero?</li>
+        <li data-i18n="home.chi-siamo.come-si-costruisce-una">Come si costruisce una carriera nella consulenza, nel finance o nell'IT?</li>
       </ul>
     </div>
     </div>
@@ -494,41 +515,41 @@
 <section class="audience" id="per-chi">
   <div class="container">
     <div class="reveal section-head">
-      <span class="eyebrow">Cosa facciamo per te</span>
-      <h2>Una community, <em>tre modi</em> di farne parte.</h2>
+      <span data-i18n="home.per-chi.cosa-facciamo-per-te" class="eyebrow">Cosa facciamo per te</span>
+      <h2 data-i18n="home.per-chi.una-community-tre-modi">Una community, <em>tre modi</em> di farne parte.</h2>
     </div>
-    <div class="tabs reveal" role="tablist" aria-label="Chi sei?">
-      <button role="tab" class="tab is-active" id="t-giovani" aria-controls="tab-giovani" data-tab="giovani" aria-selected="true">Studenti e neolavoratori</button>
-      <button role="tab" class="tab" tabindex="-1" id="t-pro" aria-controls="tab-pro" data-tab="pro" aria-selected="false">Per i professionisti</button>
-      <button role="tab" class="tab" tabindex="-1" id="t-enti" aria-controls="tab-enti" data-tab="enti" aria-selected="false">Per università e aziende</button>
+    <div data-i18n-aria-label="common.per-chi.aria-label-chi-sei" class="tabs reveal" role="tablist" aria-label="Chi sei?">
+      <button data-i18n="home.per-chi.studenti-e-neolavoratori" role="tab" class="tab is-active" id="t-giovani" aria-controls="tab-giovani" data-tab="giovani" aria-selected="true">Studenti e neolavoratori</button>
+      <button data-i18n="home.per-chi.per-i-professionisti" role="tab" class="tab" tabindex="-1" id="t-pro" aria-controls="tab-pro" data-tab="pro" aria-selected="false">Per i professionisti</button>
+      <button data-i18n="home.per-chi.per-universita-e-aziende" role="tab" class="tab" tabindex="-1" id="t-enti" aria-controls="tab-enti" data-tab="enti" aria-selected="false">Per università e aziende</button>
     </div>
     <div class="panels">
       <div class="panel is-active" id="tab-giovani" role="tabpanel" aria-labelledby="t-giovani" tabindex="0">
         <ul>
-          <li>Speech e talk di professionisti del tuo settore</li>
-          <li>Orientamento basato su esperienze reali</li>
-          <li>Workshop e formazione, in università e fuori</li>
-          <li>Networking e contatti utili per entrare nel mondo del lavoro</li>
+          <li data-i18n="home.per-chi.speech-e-talk-di">Speech e talk di professionisti del tuo settore</li>
+          <li data-i18n="home.per-chi.orientamento-basato-su-esperienze">Orientamento basato su esperienze reali</li>
+          <li data-i18n="home.per-chi.workshop-e-formazione-in">Workshop e formazione, in università e fuori</li>
+          <li data-i18n="home.per-chi.networking-e-contatti-utili">Networking e contatti utili per entrare nel mondo del lavoro</li>
         </ul>
-        <a href="pages/contatti.html?profilo=stud" class="btn btn-dark">Partecipa agli eventi</a>
+        <a data-i18n="home.per-chi.partecipa-agli-eventi" href="pages/contatti.html?profilo=stud" class="btn btn-dark">Partecipa agli eventi</a>
       </div>
       <div class="panel" id="tab-pro" role="tabpanel" aria-labelledby="t-pro" tabindex="0">
         <ul>
-          <li>Entra in una rete di professionisti e futuri professionisti</li>
-          <li>Fai networking con persone di settori e aziende diverse</li>
-          <li>Proponi o tieni speech e talk per studenti e neolavoratori</li>
-          <li>Partecipa a eventi di networking e formazione</li>
+          <li data-i18n="home.per-chi.entra-in-una-rete">Entra in una rete di professionisti e futuri professionisti</li>
+          <li data-i18n="home.per-chi.fai-networking-con-persone">Fai networking con persone di settori e aziende diverse</li>
+          <li data-i18n="home.per-chi.proponi-o-tieni-speech">Proponi o tieni speech e talk per studenti e neolavoratori</li>
+          <li data-i18n="home.per-chi.partecipa-a-eventi-di">Partecipa a eventi di networking e formazione</li>
         </ul>
-        <a href="pages/contatti.html?profilo=pro" class="btn btn-dark">Entra nella rete</a>
+        <a data-i18n="home.per-chi.entra-nella-rete" href="pages/contatti.html?profilo=pro" class="btn btn-dark">Entra nella rete</a>
       </div>
       <div class="panel" id="tab-enti" role="tabpanel" aria-labelledby="t-enti" tabindex="0">
         <ul>
-          <li>Talk e speech di professionisti in aula e negli atenei</li>
-          <li>Incontri tra studenti e realtà aziendali</li>
-          <li>Eventi di orientamento su misura</li>
-          <li>Collaborazioni e progetti condivisi</li>
+          <li data-i18n="home.per-chi.talk-e-speech-di">Talk e speech di professionisti in aula e negli atenei</li>
+          <li data-i18n="home.per-chi.incontri-tra-studenti-e">Incontri tra studenti e realtà aziendali</li>
+          <li data-i18n="home.per-chi.eventi-di-orientamento-su">Eventi di orientamento su misura</li>
+          <li data-i18n="home.per-chi.collaborazioni-e-progetti-condivisi">Collaborazioni e progetti condivisi</li>
         </ul>
-        <a href="pages/contatti.html?profilo=ente" class="btn btn-dark">Collaboriamo</a>
+        <a data-i18n="home.per-chi.collaboriamo" href="pages/contatti.html?profilo=ente" class="btn btn-dark">Collaboriamo</a>
       </div>
     </div>
   </div>
@@ -537,21 +558,21 @@
 <section class="journey" id="come-funziona">
   <div class="container">
     <div class="reveal section-head">
-      <span class="eyebrow">Come funziona</span>
-      <h2>Dal primo incontro alla tua <em>carriera.</em></h2>
+      <span data-i18n="common.come-funziona.come-funziona" class="eyebrow">Come funziona</span>
+      <h2 data-i18n="home.come-funziona.dal-primo-incontro-alla">Dal primo incontro alla tua <em>carriera.</em></h2>
     </div>
     <ol class="steps">
-      <li class="reveal"><b>01</b><h3>Incontra</h3><p>Partecipa ai talk e conosci chi lavora davvero nelle aziende.</p></li>
-      <li class="reveal"><b>02</b><h3>Confrontati</h3><p>Fai domande, ascolta storie, chiarisci i tuoi dubbi sul futuro.</p></li>
-      <li class="reveal"><b>03</b><h3>Cresci</h3><p>Sviluppa competenze con workshop e momenti di formazione dedicati.</p></li>
-      <li class="reveal"><b>04</b><h3>Connettiti</h3><p>Entra nella rete e trasforma i contatti in opportunità.</p></li>
+      <li class="reveal"><b>01</b><h3 data-i18n="home.come-funziona.incontra">Incontra</h3><p data-i18n="home.come-funziona.partecipa-ai-talk-e">Partecipa ai talk e conosci chi lavora davvero nelle aziende.</p></li>
+      <li class="reveal"><b>02</b><h3 data-i18n="home.come-funziona.confrontati">Confrontati</h3><p data-i18n="home.come-funziona.fai-domande-ascolta-storie">Fai domande, ascolta storie, chiarisci i tuoi dubbi sul futuro.</p></li>
+      <li class="reveal"><b>03</b><h3 data-i18n="home.come-funziona.cresci">Cresci</h3><p data-i18n="home.come-funziona.sviluppa-competenze-con-workshop">Sviluppa competenze con workshop e momenti di formazione dedicati.</p></li>
+      <li class="reveal"><b>04</b><h3 data-i18n="home.come-funziona.connettiti">Connettiti</h3><p data-i18n="home.come-funziona.entra-nella-rete-e">Entra nella rete e trasforma i contatti in opportunità.</p></li>
     </ol>
   </div>
 </section>
 
 <section class="quote-band" aria-live="polite">
   <div class="container">
-    <blockquote id="quote-text">Le opportunità nascono dagli incontri.</blockquote>
+    <blockquote data-i18n="home.quote-band.le-opportunita-nascono-dagli" id="quote-text">Le opportunità nascono dagli incontri.</blockquote>
     <div class="quote-dots" id="quote-dots"></div>
   </div>
 </section>
@@ -559,34 +580,34 @@
 <section id="eventi">
   <div class="container">
     <div class="reveal section-head">
-      <span class="eyebrow">News &amp; Eventi</span>
-      <h2>I prossimi <em>appuntamenti.</em></h2>
+      <span data-i18n="home.eventi.news-eventi" class="eyebrow">News &amp; Eventi</span>
+      <h2 data-i18n="home.eventi.i-prossimi-appuntamenti">I prossimi <em>appuntamenti.</em></h2>
     </div>
     <div class="cards events-grid" id="events-list"></div>
-    <div class="events-note reveal"><span>Altri appuntamenti saranno annunciati a breve.</span><a href="pages/contatti.html">Scrivici per ricevere gli aggiornamenti →</a></div>
+    <div class="events-note reveal"><span data-i18n="home.eventi.altri-appuntamenti-saranno-annunciati">Altri appuntamenti saranno annunciati a breve.</span><a data-i18n="home.eventi.eventi-passati" href="pages/eventi-passati.html">Eventi passati →</a><a data-i18n="home.eventi.scrivici-per-ricevere-gli" href="pages/contatti.html">Scrivici per ricevere gli aggiornamenti →</a></div>
   </div>
 </section>
 
 <section class="faq-section" id="faq">
   <div class="container faq-layout">
     <div class="reveal">
-      <span class="eyebrow">FAQ</span>
-      <h2>Domande frequenti.</h2>
+      <span data-i18n="common.nav.faq" class="eyebrow">FAQ</span>
+      <h2 data-i18n="home.faq.domande-frequenti">Domande frequenti.</h2>
     </div>
     <div class="faq reveal">
-      <details><summary>Chi può partecipare?</summary><p>Gli eventi sono aperti a studenti, laureandi, laureati e neolavoratori. L'associazione è composta in gran parte da professionisti e futuri professionisti.</p></details>
-      <details><summary>Gli eventi sono a pagamento?</summary><p>Le modalità di partecipazione saranno indicate per ogni evento.</p></details>
-      <details><summary>Come entro nella rete di professionisti?</summary><p>Scrivici tramite il modulo contatti indicando il tuo ruolo e il tuo settore: ti spiegheremo come entrare e come partecipare o proporre un talk.</p></details>
-      <details><summary>Potete venire nella nostra università o scuola?</summary><p>Sì, organizziamo talk e momenti di formazione negli atenei, ma anche fuori. Contattaci per costruire insieme l'incontro.</p></details>
+      <details><summary data-i18n="home.faq.chi-puo-partecipare">Chi può partecipare?</summary><p data-i18n="home.faq.gli-eventi-sono-aperti">Gli eventi sono aperti a studenti, laureandi, laureati e neolavoratori. L'associazione è composta in gran parte da professionisti e futuri professionisti.</p></details>
+      <details><summary data-i18n="home.faq.gli-eventi-sono-a">Gli eventi sono a pagamento?</summary><p data-i18n="home.faq.le-modalita-di-partecipazione">Le modalità di partecipazione saranno indicate per ogni evento.</p></details>
+      <details><summary data-i18n="home.faq.come-entro-nella-rete">Come entro nella rete di professionisti?</summary><p data-i18n="home.faq.scrivici-tramite-il-modulo">Scrivici tramite il modulo contatti indicando il tuo ruolo e il tuo settore: ti spiegheremo come entrare e come partecipare o proporre un talk.</p></details>
+      <details><summary data-i18n="home.faq.potete-venire-nella-nostra">Potete venire nella nostra università o scuola?</summary><p data-i18n="home.faq.si-organizziamo-talk-e">Sì, organizziamo talk e momenti di formazione negli atenei, ma anche fuori. Contattaci per costruire insieme l'incontro.</p></details>
     </div>
   </div>
 </section>
 
 <section class="cta-band">
-  <span class="cta-band-watermark" aria-hidden="true">COMMUNITY</span>
+  <span data-i18n="home.cta-band.community" class="cta-band-watermark" aria-hidden="true">COMMUNITY</span>
   <div class="container reveal">
-    <h2>Pronto a entrare nella <em>rete?</em></h2>
-    <a href="pages/contatti.html" class="btn btn-primary">Entra nella community <span class="btn-arrow" aria-hidden="true">→</span></a>
+    <h2 data-i18n="common.cta-band.pronto-a-entrare-nella">Pronto a entrare nella <em>rete?</em></h2>
+    <a data-i18n="common.cta-band.entra-nella-community" href="pages/contatti.html" class="btn btn-primary">Entra nella community <span class="btn-arrow" aria-hidden="true">→</span></a>
   </div>
 </section>
 
@@ -595,48 +616,53 @@
 <footer>
   <div class="container">
     <a href="#home" class="logo"><img src="assets/logo.png" alt="" class="logo-img">Next<span>Level</span></a>
-    <p class="footer-motto">Ideas. People. Impact.</p>
-    <p>© <span id="footer-year"></span> Next Level – Associazione. Dove il talento incontra l'esperienza.</p>
-    <p><a href="#privacy" data-privacy>Informativa sulla privacy</a></p>
+    <p data-i18n="common.footer.ideas-people-impact" class="footer-motto">Ideas. People. Impact.</p>
+    <p data-i18n="common.footer.next-level-associazione-dove">© <span id="footer-year"></span> Next Level – Associazione. Dove il talento incontra l'esperienza.</p>
+    <p><a data-i18n="common.footer.informativa-sulla-privacy" href="#privacy" data-privacy>Informativa sulla privacy</a></p>
   </div>
 </footer>
 
 <dialog id="privacy" aria-labelledby="privacy-title">
-  <div class="privacy-head"><h2 id="privacy-title">Informativa sulla privacy</h2><button class="privacy-close" aria-label="Chiudi">&times;</button></div>
+  <div class="privacy-head"><h2 data-i18n="common.footer.informativa-sulla-privacy" id="privacy-title">Informativa sulla privacy</h2><button data-i18n-aria-label="home.privacy.aria-label-chiudi" class="privacy-close" aria-label="Chiudi">&times;</button></div>
   <div class="privacy-body">
-    <p><em>Informativa ai sensi degli artt. 13-14 del Regolamento (UE) 2016/679 (GDPR).</em></p>
-    <h3>Titolare del trattamento</h3>
-    <p>Next Level (associazione). Contatto: <a href="mailto:desilvestrisluca@gmail.com">desilvestrisluca@gmail.com</a>.</p>
-    <h3>Dati raccolti</h3>
-    <p>Attraverso il modulo contatti raccogliamo i dati che inserisci volontariamente: nome e cognome, indirizzo email, numero di telefono se indicato, profilo (studente, professionista, ente), università, azienda o settore se indicati, e contenuto del messaggio.</p>
-    <h3>Finalità e base giuridica</h3>
-    <p>I dati sono usati esclusivamente per rispondere alla tua richiesta e, se lo desideri, per informarti sulle attività dell'associazione. Base giuridica: il tuo consenso (art. 6.1.a GDPR) e l'esecuzione di misure precontrattuali richieste da te (art. 6.1.b).</p>
-    <h3>Modalità</h3>
-    <p>Il modulo non salva i dati sul sito: all'invio si apre il tuo programma di posta con un'email precompilata indirizzata al titolare. Il messaggio è gestito dal tuo fornitore di posta e dal nostro. Questo sito non utilizza cookie di profilazione né strumenti di analisi.</p>
-    <h3>Conservazione</h3>
-    <p>I dati sono conservati per il tempo necessario a gestire la tua richiesta e, comunque, non oltre 24 mesi dall'ultimo contatto, salvo obblighi di legge.</p>
-    <h3>Comunicazione dei dati</h3>
-    <p>I dati non sono venduti né diffusi. Possono essere accessibili solo a persone autorizzate dell'associazione e ai fornitori di servizi tecnici (posta elettronica) necessari alla gestione.</p>
-    <h3>I tuoi diritti</h3>
-    <p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, opposizione e portabilità dei tuoi dati, e revocare il consenso in qualsiasi momento, scrivendo all'indirizzo del titolare. Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>).</p>
-    <h3>Pagina Membri</h3>
-    <p>Nella pagina Membri pubblichiamo nome, azienda, settore, foto e link al profilo LinkedIn solo delle persone che hanno dato il proprio consenso. Ogni membro può chiedere in qualsiasi momento la modifica o la rimozione dei propri dati scrivendo al titolare.</p>
-    <h3>Hosting</h3>
-    <p>Il sito è ospitato su GitHub Pages (GitHub, Inc.), che può trattare dati tecnici di navigazione (es. indirizzo IP) secondo la propria informativa.</p>
-    <p><small>Ultimo aggiornamento: novembre 2026.</small></p>
+    <p><em data-i18n="home.privacy.informativa-ai-sensi-degli">Informativa ai sensi degli artt. 13-14 del Regolamento (UE) 2016/679 (GDPR).</em></p>
+    <h3 data-i18n="home.privacy.titolare-del-trattamento">Titolare del trattamento</h3>
+    <p data-i18n="home.privacy.next-level-associazione-contatto">Next Level (associazione). Contatto: <a href="mailto:desilvestrisluca@gmail.com">desilvestrisluca@gmail.com</a>.</p>
+    <h3 data-i18n="home.privacy.dati-raccolti">Dati raccolti</h3>
+    <p data-i18n="home.privacy.attraverso-il-modulo-contatti">Attraverso il modulo contatti raccogliamo i dati che inserisci volontariamente: nome e cognome, indirizzo email, numero di telefono se indicato, profilo (studente, professionista, ente), università, azienda o settore se indicati, e contenuto del messaggio.</p>
+    <h3 data-i18n="home.privacy.finalita-e-base-giuridica">Finalità e base giuridica</h3>
+    <p data-i18n="home.privacy.i-dati-sono-usati">I dati sono usati esclusivamente per rispondere alla tua richiesta e, se lo desideri, per informarti sulle attività dell'associazione. Base giuridica: il tuo consenso (art. 6.1.a GDPR) e l'esecuzione di misure precontrattuali richieste da te (art. 6.1.b).</p>
+    <h3 data-i18n="home.privacy.modalita">Modalità</h3>
+    <p data-i18n="home.privacy.il-modulo-contatti-non">Il modulo contatti non salva i dati sul sito: all'invio si apre il tuo programma di posta con un'email precompilata indirizzata al titolare. Il messaggio è gestito dal tuo fornitore di posta e dal nostro. Questo sito non utilizza cookie di profilazione né strumenti di analisi.</p>
+    <h3 data-i18n="home.privacy.iscrizione-agli-eventi">Iscrizione agli eventi</h3>
+    <p data-i18n="home.privacy.l-iscrizione-agli-eventi">L'iscrizione agli eventi avviene tramite un modulo Google Forms, a cui si accede dal pulsante "Iscriviti". I dati che inserisci nel modulo (quelli richiesti dal modulo stesso) sono raccolti e conservati da Google, che agisce come fornitore del servizio per conto dell'associazione, e sono consultabili solo dai gestori di Next Level. Li usiamo esclusivamente per organizzare l'evento e comunicarti informazioni su di esso. Base giuridica: esecuzione della tua richiesta di partecipazione (art. 6.1.b GDPR). I dati di iscrizione sono conservati per il tempo necessario all'evento e non oltre 24 mesi, salvo tuo ulteriore consenso. Cliccando "Iscriviti" lasci questo sito e passi a Google: vale la loro informativa (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>).</p>
+    <h3 data-i18n="home.privacy.conservazione">Conservazione</h3>
+    <p data-i18n="home.privacy.i-dati-sono-conservati">I dati sono conservati per il tempo necessario a gestire la tua richiesta e, comunque, non oltre 24 mesi dall'ultimo contatto, salvo obblighi di legge.</p>
+    <h3 data-i18n="home.privacy.comunicazione-dei-dati">Comunicazione dei dati</h3>
+    <p data-i18n="home.privacy.i-dati-non-sono">I dati non sono venduti né diffusi. Possono essere accessibili solo a persone autorizzate dell'associazione e ai fornitori di servizi tecnici (posta elettronica) necessari alla gestione.</p>
+    <h3 data-i18n="home.privacy.i-tuoi-diritti">I tuoi diritti</h3>
+    <p data-i18n="home.privacy.puoi-chiedere-accesso-rettifica">Puoi chiedere accesso, rettifica, cancellazione, limitazione, opposizione e portabilità dei tuoi dati, e revocare il consenso in qualsiasi momento, scrivendo all'indirizzo del titolare. Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>).</p>
+    <h3 data-i18n="home.privacy.pagina-membri">Pagina Membri</h3>
+    <p data-i18n="home.privacy.nella-pagina-membri-pubblichiamo">Nella pagina Membri pubblichiamo nome, azienda, settore, foto e link al profilo LinkedIn solo delle persone che hanno dato il proprio consenso. Ogni membro può chiedere in qualsiasi momento la modifica o la rimozione dei propri dati scrivendo al titolare.</p>
+    <h3 data-i18n="home.privacy.hosting">Hosting</h3>
+    <p data-i18n="home.privacy.il-sito-e-ospitato">Il sito è ospitato su GitHub Pages (GitHub, Inc.), che può trattare dati tecnici di navigazione (es. indirizzo IP) secondo la propria informativa.</p>
+    <p><small data-i18n="home.privacy.ultimo-aggiornamento-novembre-2026">Ultimo aggiornamento: novembre 2026.</small></p>
   </div>
 </dialog>
 
-<button class="back-to-top" id="back-to-top" aria-label="Torna su"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<button data-i18n-aria-label="common.page.aria-label-torna-su" class="back-to-top" id="back-to-top" aria-label="Torna su"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
 <script src="js/data/site.js"></script>
+<script src="js/core/i18n.js"></script>
 <script src="js/data/events.js"></script>
+<script src="js/core/events-util.js"></script>
 <script src="js/data/personas.js"></script>
 <script src="js/core/reveal.js"></script>
 <script src="js/core/navigation.js"></script>
 <script src="js/home/quote-rotator.js"></script>
 <script src="js/home/tabs.js"></script>
 <script src="js/home/events.js"></script>
+<script src="js/home/countdown.js"></script>
 <script src="js/core/privacy-dialog.js"></script>
 <script src="js/home/hero-effects.js"></script>
 <script src="js/home/persona.js"></script>

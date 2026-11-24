@@ -41,3 +41,8 @@ header nav a.btn{animation:ring 3s ease-out 2s infinite}
   nav ul{gap:1.05rem}
   nav a{font-size:.86rem}
 }
+
+/* Selettore di lingua IT | EN */
+nav a.lang-link{font-size:.8rem;font-weight:800;letter-spacing:.08em;border:1.5px solid rgba(220,193,147,.5);border-radius:999px;padding:.25rem .7rem;color:var(--gold);opacity:1}
+nav a.lang-link::after{display:none}
+nav a.lang-link:hover{background:var(--gold);color:var(--navy)}

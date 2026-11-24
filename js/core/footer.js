@@ -1,1 +1,1 @@
-document.getElementById('footer-year').textContent = new Date().getFullYear();
+window.NextLevel.ready(() => { document.getElementById('footer-year').textContent = new Date().getFullYear(); });

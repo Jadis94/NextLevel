@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jadis94.github.io/NextLevel/sitemap.xml

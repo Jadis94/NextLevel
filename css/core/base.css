@@ -34,3 +34,6 @@ section{padding:6.5rem 0}
 }
 
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* in inglese la pagina resta nascosta finché i testi non sono caricati (vedi js/core/lang.js) */
+html.i18n-pending body{visibility:hidden}

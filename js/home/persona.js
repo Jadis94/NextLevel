@@ -1,5 +1,5 @@
 /* "Sono…": adatta testo dell'hero e scheda "Per te" al profilo scelto; il pulsante porta alla pagina contatti con il profilo già indicato */
-(function (NL) {
+window.NextLevel.ready(function (NL) {
   const lead = document.getElementById('hero-lead');
   const ctaText = document.getElementById('hero-cta-text');
   const chips = [...document.querySelectorAll('.persona-chip')];
@@ -22,7 +22,7 @@
       lead.classList.remove('is-swapping');
     }, 220);
 
-    ctaLink.href = persona ? 'pages/contatti.html?profilo=' + key : defaults.href;
+    ctaLink.href = persona ? 'pages/' + NL.pages.contact + '?profilo=' + key : defaults.href;
     if (persona) NL.selectTab(persona.tab);
   }
 
@@ -30,4 +30,4 @@
     setPersona(chip.getAttribute('aria-pressed') === 'true' ? null : chip.dataset.persona);
   }));
 
-})(window.NextLevel);
+});

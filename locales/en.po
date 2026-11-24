@@ -1,0 +1,1140 @@
+# Testi del sito Next Level – inglese.
+# Formato gettext: msgid = chiave (la stessa in it.po e en.po), msgstr = testo.
+# Le chiavi data-i18n nell'HTML puntano qui. Si modifica con un editor di testo o con Poedit.
+# Il testo può contenere HTML semplice (<em>, <strong>, <a>, <span>).
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+# ===== Pagine (testi dell'HTML) =====
+
+#: index.html
+msgid "home.meta.next-level-dove-il"
+msgstr "Next Level – Where talent meets experience"
+
+#: index.html
+msgid "home.meta.content-next-level-e-un"
+msgstr "Next Level is an association that builds a network of professionals and brings their experience to students, graduating students, graduates and early-career workers: networking, talks and training."
+
+#: index.html
+msgid "home.meta.content-next-level-dove-il"
+msgstr "Next Level – Where talent meets experience"
+
+#: index.html
+msgid "home.meta.content-una-rete-di-professionisti"
+msgstr "A network of professionals offering networking and training to students, graduating students, graduates and early-career workers."
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html
+msgid "common.page.vai-al-contenuto"
+msgstr "Skip to content"
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html
+msgid "common.header.aria-label-apri-il-menu"
+msgstr "Open menu"
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html
+msgid "common.nav.chi-siamo-e-cosa"
+msgstr "About us"
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html 404.html
+msgid "common.nav.membri"
+msgstr "Members"
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html
+msgid "common.nav.manifesto"
+msgstr "Manifesto"
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html
+msgid "common.nav.per-te"
+msgstr "For you"
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html
+msgid "common.nav.eventi"
+msgstr "Events"
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html
+msgid "common.nav.faq"
+msgstr "FAQ"
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html
+msgid "common.nav.unisciti"
+msgstr "Join us"
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html
+msgid "common.nav.aria-label-passa-alla-versione-inglese"
+msgstr "Switch to the Italian version"
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html
+msgid "common.nav.en"
+msgstr "IT"
+
+#: index.html
+msgid "home.home.rete-di-professionisti"
+msgstr "Network of professionals"
+
+#: index.html
+msgid "home.home.dove-il-talento-incontra"
+msgstr "Where talent meets <em>experience.</em>"
+
+#: index.html
+msgid "home.home.una-rete-di-professionisti"
+msgstr "A network of professionals and future professionals. We organise networking and training events, inside and outside the university, for students, graduating students, graduates and early-career workers."
+
+#: index.html
+msgid "home.home.aria-label-personalizza-il-sito"
+msgstr "Personalise the site"
+
+#: index.html
+msgid "home.home.sono"
+msgstr "I am…"
+
+#: index.html
+msgid "home.home.uno-studente-o-neolavoratore"
+msgstr "a student or early-career worker"
+
+#: index.html
+msgid "home.home.un-professionista"
+msgstr "a professional"
+
+#: index.html
+msgid "home.home.un-universita-o-un"
+msgstr "a university or a company"
+
+#: index.html
+msgid "home.home.entra-nella-community"
+msgstr "Join the community"
+
+#: index.html
+msgid "home.home.scopri-cosa-facciamo"
+msgstr "See what we do"
+
+#: index.html
+msgid "home.home.rete"
+msgstr "Network"
+
+#: index.html
+msgid "home.home.di-professionisti"
+msgstr "of professionals"
+
+#: index.html
+msgid "home.home.speech"
+msgstr "Talks"
+
+#: index.html
+msgid "home.home.e-talk-di-esperti"
+msgstr "by experts"
+
+#: index.html
+msgid "home.home.formazione"
+msgstr "Training"
+
+#: index.html
+msgid "home.home.in-universita-e-fuori"
+msgstr "in universities and beyond"
+
+#: index.html
+msgid "home.countdown.prossimo-evento"
+msgstr "Next event"
+
+#: index.html
+msgid "home.countdown.aria-label-tempo-mancante-al-prossimo"
+msgstr "Time left until the next event"
+
+#: index.html
+msgid "home.countdown.giorni"
+msgstr "days"
+
+#: index.html
+msgid "home.countdown.ore"
+msgstr "hours"
+
+#: index.html
+msgid "home.countdown.minuti"
+msgstr "minutes"
+
+#: index.html
+msgid "home.countdown.secondi"
+msgstr "seconds"
+
+#: index.html
+msgid "home.countdown.iscriviti"
+msgstr "Sign up <span class=\"btn-arrow\" aria-hidden=\"true\">→</span>"
+
+#: index.html
+msgid "home.countdown.dettagli"
+msgstr "Details"
+
+#: index.html
+msgid "common.chi-siamo.chi-siamo-e-cosa"
+msgstr "Who we are and what we do"
+
+#: index.html
+msgid "home.chi-siamo.una-rete-di-professionisti"
+msgstr "A network of <em>professionals</em> that shares experience."
+
+#: index.html
+msgid "home.chi-siamo.next-level-nasce-con"
+msgstr "Next Level was founded with two aims: to build a network of professionals and, through that network, to bring experience and skills to those building their own path."
+
+#: index.html
+msgid "home.chi-siamo.i-nostri-soci-sono"
+msgstr "Most of our members are professionals or future professionals. They are the ones giving the talks and training sessions for students, graduating students, graduates and early-career workers, inside and outside the university."
+
+#: index.html
+msgid "home.chi-siamo.una-rete-che-cresce"
+msgstr "A network that grows together and gives value back to those who come after."
+
+#: index.html
+msgid "home.chi-siamo.conosci-i-membri"
+msgstr "Meet the members <span class=\"btn-arrow\" aria-hidden=\"true\">→</span>"
+
+#: index.html
+msgid "home.chi-siamo.leggi-il-manifesto"
+msgstr "Read the manifesto <span class=\"btn-arrow\" aria-hidden=\"true\">→</span>"
+
+#: index.html
+msgid "home.chi-siamo.professionisti"
+msgstr "Professionals"
+
+#: index.html
+msgid "home.chi-siamo.soci-e-futuri-professionisti"
+msgstr "Members and future professionals"
+
+#: index.html
+msgid "home.chi-siamo.next-level"
+msgstr "Next Level"
+
+#: index.html
+msgid "home.chi-siamo.networking-speech-formazione"
+msgstr "Networking, talks, training"
+
+#: index.html
+msgid "home.chi-siamo.chi-sta-iniziando"
+msgstr "Those just starting out"
+
+#: index.html
+msgid "home.chi-siamo.studenti-laureandi-laureati-neolavoratori"
+msgstr "Students, graduating students, graduates, early-career workers"
+
+#: index.html 404.html
+msgid "common.chi-siamo.cosa-facciamo"
+msgstr "What we do"
+
+#: index.html
+msgid "home.chi-siamo.le-connessioni-che-aprono"
+msgstr "The connections that open up <em>opportunities.</em>"
+
+#: index.html
+msgid "home.chi-siamo.networking"
+msgstr "Networking"
+
+#: index.html
+msgid "home.chi-siamo.occasioni-per-conoscersi-scambiare"
+msgstr "Opportunities to meet, exchange contacts and spark collaborations among everyone who takes part in our events."
+
+#: index.html
+msgid "home.chi-siamo.formazione-nelle-universita"
+msgstr "Training in universities"
+
+#: index.html
+msgid "home.chi-siamo.speech-talk-e-workshop"
+msgstr "Talks and workshops led by professionals inside universities, bringing the world of work into the classroom."
+
+#: index.html
+msgid "home.chi-siamo.la-rete-di-professionisti"
+msgstr "The network of professionals"
+
+#: index.html
+msgid "home.chi-siamo.una-community-di-professionisti"
+msgstr "A community of professionals and future professionals who share skills, experience and relationships."
+
+#: index.html
+msgid "home.chi-siamo.formazione-anche-fuori-dall"
+msgstr "Training beyond the university"
+
+#: index.html
+msgid "home.chi-siamo.speech-workshop-e-incontri"
+msgstr "Talks, workshops and meetings open to graduating students, graduates and early-career workers, in companies and external venues, to develop professional and soft skills."
+
+#: index.html
+msgid "home.chi-siamo.domande-concrete-risposte-da"
+msgstr "Real questions, answered by people who live it every day."
+
+#: index.html
+msgid "home.chi-siamo.cosa-significa-lavorare-in"
+msgstr "What does it mean to work in a large organisation?"
+
+#: index.html
+msgid "home.chi-siamo.come-si-diventa-un"
+msgstr "How do you become a leader?"
+
+#: index.html
+msgid "home.chi-siamo.quali-competenze-servono-davvero"
+msgstr "Which skills do you really need?"
+
+#: index.html
+msgid "home.chi-siamo.come-si-costruisce-una"
+msgstr "How do you build a career in consulting, finance or IT?"
+
+#: index.html
+msgid "home.per-chi.cosa-facciamo-per-te"
+msgstr "What we do for you"
+
+#: index.html
+msgid "home.per-chi.una-community-tre-modi"
+msgstr "One community, <em>three ways</em> to be part of it."
+
+#: index.html
+msgid "common.per-chi.aria-label-chi-sei"
+msgstr "Who are you?"
+
+#: index.html
+msgid "home.per-chi.studenti-e-neolavoratori"
+msgstr "Students and early-career workers"
+
+#: index.html
+msgid "home.per-chi.per-i-professionisti"
+msgstr "For professionals"
+
+#: index.html
+msgid "home.per-chi.per-universita-e-aziende"
+msgstr "For universities and companies"
+
+#: index.html
+msgid "home.per-chi.speech-e-talk-di"
+msgstr "Talks by professionals in your field"
+
+#: index.html
+msgid "home.per-chi.orientamento-basato-su-esperienze"
+msgstr "Career guidance based on real experience"
+
+#: index.html
+msgid "home.per-chi.workshop-e-formazione-in"
+msgstr "Workshops and training, in universities and beyond"
+
+#: index.html
+msgid "home.per-chi.networking-e-contatti-utili"
+msgstr "Networking and useful contacts to enter the world of work"
+
+#: index.html
+msgid "home.per-chi.partecipa-agli-eventi"
+msgstr "Join our events"
+
+#: index.html
+msgid "home.per-chi.entra-in-una-rete"
+msgstr "Join a network of professionals and future professionals"
+
+#: index.html
+msgid "home.per-chi.fai-networking-con-persone"
+msgstr "Network with people from different sectors and companies"
+
+#: index.html
+msgid "home.per-chi.proponi-o-tieni-speech"
+msgstr "Propose or give talks for students and early-career workers"
+
+#: index.html
+msgid "home.per-chi.partecipa-a-eventi-di"
+msgstr "Take part in networking and training events"
+
+#: index.html
+msgid "home.per-chi.entra-nella-rete"
+msgstr "Join the network"
+
+#: index.html
+msgid "home.per-chi.talk-e-speech-di"
+msgstr "Talks by professionals in classrooms and universities"
+
+#: index.html
+msgid "home.per-chi.incontri-tra-studenti-e"
+msgstr "Meetings between students and companies"
+
+#: index.html
+msgid "home.per-chi.eventi-di-orientamento-su"
+msgstr "Tailored career guidance events"
+
+#: index.html
+msgid "home.per-chi.collaborazioni-e-progetti-condivisi"
+msgstr "Collaborations and shared projects"
+
+#: index.html
+msgid "home.per-chi.collaboriamo"
+msgstr "Let's collaborate"
+
+#: index.html pages/contatti.html
+msgid "common.come-funziona.come-funziona"
+msgstr "How it works"
+
+#: index.html
+msgid "home.come-funziona.dal-primo-incontro-alla"
+msgstr "From the first meeting to your <em>career.</em>"
+
+#: index.html
+msgid "home.come-funziona.incontra"
+msgstr "Meet"
+
+#: index.html
+msgid "home.come-funziona.partecipa-ai-talk-e"
+msgstr "Attend the talks and meet people who actually work in companies."
+
+#: index.html
+msgid "home.come-funziona.confrontati"
+msgstr "Exchange"
+
+#: index.html
+msgid "home.come-funziona.fai-domande-ascolta-storie"
+msgstr "Ask questions, listen to stories, clear up your doubts about the future."
+
+#: index.html
+msgid "home.come-funziona.cresci"
+msgstr "Grow"
+
+#: index.html
+msgid "home.come-funziona.sviluppa-competenze-con-workshop"
+msgstr "Develop skills through workshops and dedicated training sessions."
+
+#: index.html
+msgid "home.come-funziona.connettiti"
+msgstr "Connect"
+
+#: index.html
+msgid "home.come-funziona.entra-nella-rete-e"
+msgstr "Join the network and turn contacts into opportunities."
+
+#: index.html
+msgid "home.quote-band.le-opportunita-nascono-dagli"
+msgstr "Opportunities are born from encounters."
+
+#: index.html
+msgid "home.eventi.news-eventi"
+msgstr "News &amp; Events"
+
+#: index.html
+msgid "home.eventi.i-prossimi-appuntamenti"
+msgstr "Upcoming <em>events.</em>"
+
+#: index.html
+msgid "home.eventi.altri-appuntamenti-saranno-annunciati"
+msgstr "More events will be announced soon."
+
+#: index.html
+msgid "home.eventi.eventi-passati"
+msgstr "Past events →"
+
+#: index.html
+msgid "home.eventi.scrivici-per-ricevere-gli"
+msgstr "Write to us to get updates →"
+
+#: index.html
+msgid "home.faq.domande-frequenti"
+msgstr "Frequently asked questions."
+
+#: index.html
+msgid "home.faq.chi-puo-partecipare"
+msgstr "Who can take part?"
+
+#: index.html
+msgid "home.faq.gli-eventi-sono-aperti"
+msgstr "Events are open to students, graduating students, graduates and early-career workers. The association is made up mostly of professionals and future professionals."
+
+#: index.html
+msgid "home.faq.gli-eventi-sono-a"
+msgstr "Do events have a fee?"
+
+#: index.html
+msgid "home.faq.le-modalita-di-partecipazione"
+msgstr "The terms of participation will be stated for each event."
+
+#: index.html
+msgid "home.faq.come-entro-nella-rete"
+msgstr "How do I join the network of professionals?"
+
+#: index.html
+msgid "home.faq.scrivici-tramite-il-modulo"
+msgstr "Write to us through the contact form stating your role and your sector: we will explain how to join and how to take part or propose a talk."
+
+#: index.html
+msgid "home.faq.potete-venire-nella-nostra"
+msgstr "Can you come to our university or school?"
+
+#: index.html
+msgid "home.faq.si-organizziamo-talk-e"
+msgstr "Yes, we organise talks and training sessions in universities, and elsewhere too. Get in touch and we will build the meeting together."
+
+#: index.html
+msgid "home.cta-band.community"
+msgstr "COMMUNITY"
+
+#: index.html pages/membri.html pages/eventi-passati.html
+msgid "common.cta-band.pronto-a-entrare-nella"
+msgstr "Ready to join the <em>network?</em>"
+
+#: index.html pages/manifesto.html
+msgid "common.cta-band.entra-nella-community"
+msgstr "Join the community <span class=\"btn-arrow\" aria-hidden=\"true\">→</span>"
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html 404.html
+msgid "common.footer.ideas-people-impact"
+msgstr "Ideas. People. Impact."
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html 404.html
+msgid "common.footer.next-level-associazione-dove"
+msgstr "© <span id=\"footer-year\"></span> Next Level – Association. Where talent meets experience."
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html
+msgid "common.footer.informativa-sulla-privacy"
+msgstr "Privacy policy"
+
+#: index.html
+msgid "home.privacy.aria-label-chiudi"
+msgstr "Close"
+
+#: index.html
+msgid "home.privacy.informativa-ai-sensi-degli"
+msgstr "Information pursuant to Articles 13-14 of Regulation (EU) 2016/679 (GDPR). This is a courtesy translation: in case of differences, the Italian text prevails."
+
+#: index.html
+msgid "home.privacy.titolare-del-trattamento"
+msgstr "Data controller"
+
+#: index.html
+msgid "home.privacy.next-level-associazione-contatto"
+msgstr "Next Level (association). Contact: <a href=\"mailto:desilvestrisluca@gmail.com\">desilvestrisluca@gmail.com</a>."
+
+#: index.html
+msgid "home.privacy.dati-raccolti"
+msgstr "Data collected"
+
+#: index.html
+msgid "home.privacy.attraverso-il-modulo-contatti"
+msgstr "Through the contact form we collect the data you enter voluntarily: full name, email address, telephone number if provided, profile (student, professional, organisation), university, company or sector if provided, and the content of your message."
+
+#: index.html
+msgid "home.privacy.finalita-e-base-giuridica"
+msgstr "Purposes and legal basis"
+
+#: index.html
+msgid "home.privacy.i-dati-sono-usati"
+msgstr "Your data is used exclusively to reply to your request and, if you wish, to inform you about the activities of the association. Legal basis: your consent (Art. 6.1.a GDPR) and the performance of pre-contractual measures requested by you (Art. 6.1.b)."
+
+#: index.html
+msgid "home.privacy.modalita"
+msgstr "How it works"
+
+#: index.html
+msgid "home.privacy.il-modulo-contatti-non"
+msgstr "The contact form does not store data on the site: when you submit it, your email program opens with a pre-filled email addressed to the controller. The message is handled by your email provider and by ours. This site does not use profiling cookies or analytics tools."
+
+#: index.html
+msgid "home.privacy.iscrizione-agli-eventi"
+msgstr "Event registration"
+
+#: index.html
+msgid "home.privacy.l-iscrizione-agli-eventi"
+msgstr "Registration for events is done through a Google Forms form, reached with the \"Sign up\" button. The data you enter in the form (the data the form asks for) is collected and stored by Google, which acts as a service provider on behalf of the association, and can only be viewed by the managers of Next Level. We use it exclusively to organise the event and to send you information about it. Legal basis: performance of your request to take part (Art. 6.1.b GDPR). Registration data is kept for as long as needed for the event and no longer than 24 months, unless you give further consent. By clicking \"Sign up\" you leave this site and go to Google: their privacy policy applies (<a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener\">policies.google.com/privacy</a>)."
+
+#: index.html
+msgid "home.privacy.conservazione"
+msgstr "Retention"
+
+#: index.html
+msgid "home.privacy.i-dati-sono-conservati"
+msgstr "Data is kept for the time needed to handle your request and, in any case, no longer than 24 months after the last contact, unless required by law."
+
+#: index.html
+msgid "home.privacy.comunicazione-dei-dati"
+msgstr "Disclosure of data"
+
+#: index.html
+msgid "home.privacy.i-dati-non-sono"
+msgstr "Data is neither sold nor disseminated. It may be accessed only by authorised persons of the association and by the technical service providers (email) needed for its management."
+
+#: index.html
+msgid "home.privacy.i-tuoi-diritti"
+msgstr "Your rights"
+
+#: index.html
+msgid "home.privacy.puoi-chiedere-accesso-rettifica"
+msgstr "You can request access, rectification, erasure, restriction, objection and portability of your data, and withdraw your consent at any time, by writing to the controller's address. You also have the right to lodge a complaint with the Italian data protection authority (<a href=\"https://www.garanteprivacy.it\" target=\"_blank\" rel=\"noopener\">garanteprivacy.it</a>)."
+
+#: index.html
+msgid "home.privacy.pagina-membri"
+msgstr "Members page"
+
+#: index.html
+msgid "home.privacy.nella-pagina-membri-pubblichiamo"
+msgstr "On the Members page we publish name, company, sector, photo and LinkedIn profile link only of people who have given their consent. Any member can ask at any time for their data to be changed or removed by writing to the controller."
+
+#: index.html
+msgid "home.privacy.hosting"
+msgstr "Hosting"
+
+#: index.html
+msgid "home.privacy.il-sito-e-ospitato"
+msgstr "The site is hosted on GitHub Pages (GitHub, Inc.), which may process technical browsing data (e.g. IP address) according to its own policy."
+
+#: index.html
+msgid "home.privacy.ultimo-aggiornamento-novembre-2026"
+msgstr "Last updated: November 2026."
+
+#: index.html pages/membri.html pages/manifesto.html pages/contatti.html pages/evento.html pages/eventi-passati.html
+msgid "common.page.aria-label-torna-su"
+msgstr "Back to top"
+
+#: pages/membri.html
+msgid "members.meta.membri-next-level"
+msgstr "Members – Next Level"
+
+#: pages/membri.html
+msgid "members.meta.content-le-persone-che-fanno"
+msgstr "The people who are part of Next Level: professionals and future professionals who share their experience with those just starting out."
+
+#: pages/membri.html
+msgid "members.meta.content-membri-next-level"
+msgstr "Members – Next Level"
+
+#: pages/membri.html
+msgid "members.meta.content-le-persone-che-fanno-2"
+msgstr "The people who are part of Next Level."
+
+#: pages/membri.html
+msgid "members.page-hero.le-persone-dietro-next"
+msgstr "The people behind <em>Next Level.</em>"
+
+#: pages/membri.html
+msgid "members.page-hero.professionisti-e-futuri-professionisti"
+msgstr "Professionals and future professionals who put their experience at the service of those building their own path."
+
+#: pages/membri.html
+msgid "members.members.vuoi-far-parte-della"
+msgstr "Want to join the network? Write to us from the contact page."
+
+#: pages/membri.html pages/eventi-passati.html
+msgid "common.cta-band.unisciti-a-next-level"
+msgstr "Join Next Level <span class=\"btn-arrow\" aria-hidden=\"true\">→</span>"
+
+#: pages/manifesto.html
+msgid "manifesto.meta.manifesto-next-level"
+msgstr "Manifesto – Next Level"
+
+#: pages/manifesto.html
+msgid "manifesto.meta.content-il-manifesto-di-next"
+msgstr "The Next Level manifesto: a community of managers and professionals that acts as a bridge to the new generations. Ideas, people, impact."
+
+#: pages/manifesto.html
+msgid "manifesto.meta.content-manifesto-next-level"
+msgstr "Manifesto – Next Level"
+
+#: pages/manifesto.html
+msgid "manifesto.meta.content-una-community-di-manager"
+msgstr "A community of managers and professionals that acts as a bridge to the new generations."
+
+#: pages/manifesto.html
+msgid "manifesto.page-hero.una-community-di-manager"
+msgstr "A community of managers, <em>a bridge to young people.</em>"
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.next-level-e-una"
+msgstr "Next Level is a community of managers and professionals. The association exists to bring us together and to be a bridge to the new generations, supporting their professional and personal growth through direct contact with those who experience the world of business, innovation and leadership every day."
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.idee"
+msgstr "Ideas"
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.una-community-di-manager"
+msgstr "A community of managers and professionals"
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.siamo-una-rete-di"
+msgstr "We are a network of managers and professionals who share skills, experience and relationships. Networking among members is one of the two pillars of Next Level."
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.un-ponte-verso-i"
+msgstr "A bridge to young people"
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.dalla-community-portiamo-esperienza"
+msgstr "From the community we bring experience to students, graduating students, graduates and early-career workers, through meetings, talks, workshops and training, in universities and beyond."
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.persone"
+msgstr "People"
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.le-opportunita-nascono-dagli"
+msgstr "Opportunities are born from encounters"
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.talento-esperienza-connessioni-mettiamo"
+msgstr "Talent, experience, connections. We put young people in touch with managers, professionals and business leaders, because the right connections create opportunities."
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.l-orientamento-non-si"
+msgstr "Career guidance does not stop at books"
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.crediamo-che-l-orientamento"
+msgstr "We believe career guidance should not be limited to books or university lectures. Real experience, professional stories and direct conversation help young people make more informed choices."
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.impatto"
+msgstr "Impact"
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.crescere-come-professionisti-e"
+msgstr "Growing as professionals and as people"
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.workshop-testimonianze-e-confronto"
+msgstr "Workshops, testimonials and discussion to develop professional skills, soft skills and leadership."
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.restituire-valore-alle-nuove"
+msgstr "Giving value back to the new generations"
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.una-rete-che-mette"
+msgstr "A network that puts skills, experience and relationships at the service of those just starting out. Those who have received, give back in turn."
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.un-ponte-tra-nuove"
+msgstr "A bridge between new generations and the professional world."
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.next-level-ideas-people"
+msgstr "Next Level · Ideas. People. Impact."
+
+#: pages/manifesto.html
+msgid "manifesto.manifesto.scarica-il-volantino-pdf"
+msgstr "Download the flyer (PDF, in Italian)"
+
+#: pages/manifesto.html
+msgid "manifesto.cta-band.ti-riconosci-in-queste"
+msgstr "Do you recognise yourself in these <em>ideas?</em>"
+
+#: pages/contatti.html
+msgid "contact.meta.contatti-next-level"
+msgstr "Contact – Next Level"
+
+#: pages/contatti.html
+msgid "contact.meta.content-scrivi-a-next-level"
+msgstr "Write to Next Level: students, professionals, universities and companies can join the network and work with us."
+
+#: pages/contatti.html
+msgid "contact.meta.content-contatti-next-level"
+msgstr "Contact – Next Level"
+
+#: pages/contatti.html
+msgid "contact.meta.content-scrivici-per-entrare-nella"
+msgstr "Write to us to join the Next Level network."
+
+#: pages/contatti.html 404.html
+msgid "common.page-hero.contatti"
+msgstr "Contact"
+
+#: pages/contatti.html
+msgid "contact.page-hero.scrivici-ti-rispondiamo-noi"
+msgstr "Write to us, <em>we will reply.</em>"
+
+#: pages/contatti.html
+msgid "contact.page-hero.sei-uno-studente-un"
+msgstr "Are you a student, a graduating student, a professional or an organisation that wants to collaborate? Tell us who you are: we read every message and reply by email."
+
+#: pages/contatti.html
+msgid "contact.contatti.compili-il-modulo"
+msgstr "Fill in the form"
+
+#: pages/contatti.html
+msgid "contact.contatti.bastano-nome-email-e"
+msgstr "Your name, email and a couple of lines about you are enough."
+
+#: pages/contatti.html
+msgid "contact.contatti.si-apre-la-tua"
+msgstr "Your email program opens"
+
+#: pages/contatti.html
+msgid "contact.contatti.il-messaggio-e-gia"
+msgstr "The message is already written: just press \"Send\"."
+
+#: pages/contatti.html
+msgid "contact.contatti.ti-rispondiamo"
+msgstr "We reply"
+
+#: pages/contatti.html
+msgid "contact.contatti.ti-spieghiamo-come-entrare"
+msgstr "We explain how to join, take part or propose a talk."
+
+#: pages/contatti.html
+msgid "contact.contatti.scarica-il-volantino-di"
+msgstr "Download the Next Level flyer (PDF, in Italian)"
+
+#: pages/contatti.html
+msgid "contact.contatti.nome-e-cognome"
+msgstr "Full name"
+
+#: pages/contatti.html
+msgid "contact.contatti.placeholder-come-ti-chiami"
+msgstr "What is your name?"
+
+#: pages/contatti.html
+msgid "contact.contatti.email"
+msgstr "Email"
+
+#: pages/contatti.html
+msgid "contact.contatti.placeholder-nome-esempio-it"
+msgstr "name@example.com"
+
+#: pages/contatti.html
+msgid "contact.contatti.telefono-facoltativo"
+msgstr "Phone <span class=\"optional\">(optional)</span>"
+
+#: pages/contatti.html
+msgid "common.contatti.chi-sei"
+msgstr "Who are you?"
+
+#: pages/contatti.html
+msgid "contact.contatti.studente-laureando-laureato"
+msgstr "Student / Graduating student / Graduate"
+
+#: pages/contatti.html
+msgid "contact.contatti.neolavoratore"
+msgstr "Early-career worker"
+
+#: pages/contatti.html
+msgid "contact.contatti.professionista"
+msgstr "Professional"
+
+#: pages/contatti.html
+msgid "contact.contatti.universita-scuola-azienda"
+msgstr "University / School / Company"
+
+#: pages/contatti.html
+msgid "contact.contatti.universita-azienda-o-settore"
+msgstr "University, company or sector <span class=\"optional\">(optional)</span>"
+
+#: pages/contatti.html
+msgid "contact.contatti.placeholder-es-politecnico-telco-energia"
+msgstr "E.g. Polytechnic, Telco, Energy"
+
+#: pages/contatti.html
+msgid "contact.contatti.messaggio"
+msgstr "Message"
+
+#: pages/contatti.html
+msgid "contact.contatti.ho-letto-l-informativa"
+msgstr "I have read the <a href=\"../index.html#privacy\" target=\"_blank\" rel=\"noopener\">privacy policy</a> and consent to the processing of my data so that I can be contacted."
+
+#: pages/contatti.html
+msgid "contact.contatti.invia-messaggio"
+msgstr "Send message"
+
+#: pages/contatti.html
+msgid "contact.contatti.grazie-ci-siamo-quasi"
+msgstr "Thank you, almost there."
+
+#: pages/contatti.html
+msgid "contact.contatti.si-aprira-il-tuo"
+msgstr "Your email program will open with the message already written: just press \"Send\". If it does not open, write to us at <a href=\"mailto:desilvestrisluca@gmail.com\">desilvestrisluca@gmail.com</a>. The message is written in Italian."
+
+#: pages/contatti.html
+msgid "contact.contatti.apri-di-nuovo-la"
+msgstr "Open email again"
+
+#: pages/contatti.html
+msgid "contact.contatti.copia-indirizzo-email"
+msgstr "Copy email address"
+
+#: pages/evento.html
+msgid "event.meta.evento-next-level"
+msgstr "Event – Next Level"
+
+#: pages/evento.html
+msgid "event.meta.content-dettagli-e-informazioni-sugli"
+msgstr "Details and information about Next Level events."
+
+#: pages/evento.html
+msgid "event.meta.content-evento-next-level"
+msgstr "Event – Next Level"
+
+#: pages/eventi-passati.html
+msgid "past.meta.eventi-passati-next-level"
+msgstr "Past events – Next Level"
+
+#: pages/eventi-passati.html
+msgid "past.meta.content-l-archivio-degli-eventi"
+msgstr "The Next Level events archive: photos, recaps and materials from past meetings."
+
+#: pages/eventi-passati.html
+msgid "past.meta.content-eventi-passati-next-level"
+msgstr "Past events – Next Level"
+
+#: pages/eventi-passati.html
+msgid "past.meta.content-l-archivio-degli-eventi-2"
+msgstr "The Next Level events archive."
+
+#: pages/eventi-passati.html 404.html
+msgid "common.page-hero.eventi-passati"
+msgstr "Past events"
+
+#: pages/eventi-passati.html
+msgid "past.page-hero.gli-incontri-che-abbiamo"
+msgstr "The events <em>we have held.</em>"
+
+#: pages/eventi-passati.html
+msgid "past.page-hero.foto-riepiloghi-e-materiali"
+msgstr "Photos, recaps and materials from Next Level events. Each event moves here by itself as soon as it ends."
+
+#: pages/eventi-passati.html
+msgid "past.past-events.cerchi-i-prossimi-appuntamenti"
+msgstr "Looking for upcoming events?"
+
+#: pages/eventi-passati.html
+msgid "past.past-events.vai-agli-eventi-in"
+msgstr "Go to upcoming events →"
+
+#: 404.html
+msgid "notfound.meta.pagina-non-trovata-next"
+msgstr "Page not found – Next Level"
+
+#: 404.html
+msgid "notfound.not-found.errore-404"
+msgstr "Error 404"
+
+#: 404.html
+msgid "notfound.not-found.questa-pagina-non-esiste"
+msgstr "This page <em>does not exist.</em>"
+
+#: 404.html
+msgid "notfound.not-found.il-link-potrebbe-essere"
+msgstr "The link may be wrong, or the page has moved. Go back to the home page or see what we do."
+
+#: 404.html
+msgid "notfound.not-found.torna-alla-home"
+msgstr "Back to home <span class=\"btn-arrow\" aria-hidden=\"true\">→</span>"
+
+#: 404.html
+msgid "notfound.not-found.vedi-gli-eventi"
+msgstr "See the events"
+
+#: 404.html
+msgid "notfound.not-found.chi-siamo"
+msgstr "About us"
+
+#: 404.html
+msgid "notfound.not-found.le-persone-di-next"
+msgstr "The people of Next Level"
+
+#: 404.html
+msgid "notfound.not-found.l-archivio"
+msgstr "The archive"
+
+#: 404.html
+msgid "notfound.not-found.scrivici"
+msgstr "Write to us"
+
+# ===== Interfaccia generata da JavaScript (NL.t("nome") legge la chiave js.nome) =====
+
+msgid "js.eventMore"
+msgstr "See details →"
+
+msgid "js.register"
+msgstr "Sign up"
+
+msgid "js.registerEvent"
+msgstr "Sign up for the event"
+
+msgid "js.addToCalendar"
+msgstr "Add to calendar"
+
+msgid "js.ended"
+msgstr "Event ended"
+
+msgid "js.endedShort"
+msgstr "Ended"
+
+msgid "js.notFoundTitle"
+msgstr "Event not found"
+
+msgid "js.notFoundText"
+msgstr "The event you are looking for does not exist or is no longer available."
+
+msgid "js.toEvents"
+msgstr "Go to events"
+
+msgid "js.allEvents"
+msgstr "← All events"
+
+msgid "js.event"
+msgstr "Event"
+
+msgid "js.about"
+msgstr "What it is about"
+
+msgid "js.info"
+msgstr "Details"
+
+msgid "js.askInfo"
+msgstr "Write to us for info"
+
+msgid "js.recap"
+msgstr "How it went"
+
+msgid "js.gallery"
+msgstr "Photos"
+
+msgid "js.slides"
+msgstr "Slides and materials"
+
+msgid "js.quote"
+msgstr "Quote"
+
+msgid "js.linkedin"
+msgstr "LinkedIn profile"
+
+msgid "js.of"
+msgstr "of"
+
+msgid "js.pastEmptyTitle"
+msgstr "Our first event is coming up"
+
+msgid "js.pastEmptyText"
+msgstr "The archive will fill up after our first event: here you will find photos, recaps and materials from every event."
+
+msgid "js.pastNext"
+msgstr "See the next event →"
+
+msgid "js.cdLive"
+msgstr "It's started!"
+
+msgid "js.errName"
+msgstr "Please enter your full name."
+
+msgid "js.errEmailEmpty"
+msgstr "Please enter your email."
+
+msgid "js.errEmailBad"
+msgstr "Check the address: something is missing (e.g. name@example.com)."
+
+msgid "js.errPhone"
+msgstr "Check the number: use only digits, spaces and the country code (e.g. +39 333 1234567)."
+
+msgid "js.errMsgEmpty"
+msgstr "Write a couple of lines about yourself."
+
+msgid "js.errMsgShort"
+msgstr "Add a few more words (at least 10 characters)."
+
+msgid "js.errConsent"
+msgstr "We need your consent to be able to contact you."
+
+msgid "js.preparing"
+msgstr "Preparing your message…"
+
+msgid "js.send"
+msgstr "Send message"
+
+msgid "js.copied"
+msgstr "Address copied ✓"
+
+# ===== Frasi a rotazione =====
+
+msgid "phrase.0"
+msgstr "Opportunities are born from encounters."
+
+msgid "phrase.1"
+msgstr "Where talent meets experience."
+
+msgid "phrase.2"
+msgstr "A network of professionals at the service of those just starting out."
+
+msgid "phrase.3"
+msgstr "The connections that open up opportunities."
+
+msgid "phrase.4"
+msgstr "A bridge between new generations and the professional world."
+
+# ===== Profili "Sono…" =====
+
+msgid "persona.stud.lead"
+msgstr "Talks by professionals, training and networking opportunities to enter the world of work with more clarity and more contacts."
+
+msgid "persona.stud.cta"
+msgstr "Join our events"
+
+msgid "persona.stud.placeholder"
+msgstr "Tell us what you study or do, and which topics you would like to explore."
+
+msgid "persona.pro.lead"
+msgstr "Join a network of professionals, connect with people from different sectors and, if you wish, share your experience with those just starting out."
+
+msgid "persona.pro.cta"
+msgstr "Join the network"
+
+msgid "persona.pro.placeholder"
+msgstr "Tell us about your role, your sector and how you would like to take part."
+
+msgid "persona.ente.lead"
+msgstr "We bring talks and training by professionals to your university or company, tailored to your students and your people."
+
+msgid "persona.ente.cta"
+msgstr "Let's organise together"
+
+msgid "persona.ente.placeholder"
+msgstr "Tell us who you are and what kind of meeting you have in mind."
+
+# ===== Eventi (una sezione per evento: event.<id>.…) =====
+
+msgid "event.aperitivo-introduttivo.date"
+msgstr "4 December 2026 · 6:30 pm"
+
+msgid "event.aperitivo-introduttivo.tag"
+msgstr "Networking"
+
+msgid "event.aperitivo-introduttivo.title"
+msgstr "The association's introductory aperitivo"
+
+msgid "event.aperitivo-introduttivo.summary"
+msgstr "An evening to get to know each other, network and discuss the ideas and goals of Next Level directly. Open to everyone."
+
+msgid "event.aperitivo-introduttivo.where"
+msgstr "Triplo Cocktail Bar – Via Chiabrera 84, Rome"
+
+msgid "event.aperitivo-introduttivo.description.0"
+msgstr "Next Level kicks off its activities with an introductory aperitivo, a moment to meet, network and discuss the ideas and goals of the association. Everyone is welcome."
+
+msgid "event.aperitivo-introduttivo.description.1"
+msgstr "The event takes place at Triplo Cocktail Bar, in a fully reserved room: an informal setting, ideal for getting to know each other and exchanging views."
+
+msgid "event.aperitivo-introduttivo.description.2"
+msgstr "During the evening, information material will be available with the main points of the project and the purposes of the association."
+
+msgid "event.aperitivo-introduttivo.fact.0.label"
+msgstr "When"
+
+msgid "event.aperitivo-introduttivo.fact.0.value"
+msgstr "4 December 2026, from 6:30 pm"
+
+msgid "event.aperitivo-introduttivo.fact.1.label"
+msgstr "Where"
+
+msgid "event.aperitivo-introduttivo.fact.1.value"
+msgstr "Triplo Cocktail Bar, Via Chiabrera 84, Rome"
+
+msgid "event.aperitivo-introduttivo.fact.1.urlLabel"
+msgstr "Venue website"
+
+msgid "event.aperitivo-introduttivo.fact.2.label"
+msgstr "Getting there"
+
+msgid "event.aperitivo-introduttivo.fact.2.value"
+msgstr "A few minutes on foot from the San Paolo stop (Metro line B)"
+
+msgid "event.aperitivo-introduttivo.fact.2.urlLabel"
+msgstr "Open in Google Maps"
+
+msgid "event.aperitivo-introduttivo.fact.3.label"
+msgstr "Format"
+
+msgid "event.aperitivo-introduttivo.fact.3.value"
+msgstr "Aperitivo at €15 per person: 1 cocktail and 4 tapas"

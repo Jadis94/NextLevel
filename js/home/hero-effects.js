@@ -1,6 +1,6 @@
 /* Effetti dell'hero e dei pulsanti/card:
    titolo parola per parola, bagliore + parallax, tilt delle card, pulsanti magnetici */
-(function () {
+window.NextLevel.ready(function () {
   const reducedMotion = matchMedia('(prefers-reduced-motion:reduce)').matches;
   const finePointer = matchMedia('(hover:hover) and (pointer:fine)').matches;
 
@@ -78,4 +78,4 @@
     });
     btn.addEventListener('pointerleave', () => { btn.style.transform = ''; });
   });
-})();
+});

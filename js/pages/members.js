@@ -1,5 +1,5 @@
 /* Genera le card dei membri a partire da NextLevel.members (vedi js/data/members.js) */
-(function (NL) {
+window.NextLevel.ready(function (NL) {
   const grid = document.getElementById('members-list');
 
   const initials = name => name.split(/\s+/).slice(0, 2).map(w => w[0].toUpperCase()).join('');
@@ -11,8 +11,8 @@
       <h3>${m.name}</h3>
       <p class="member-company">${m.company}</p>
       <ul class="member-tags">${m.sectors.map(s => `<li>${s}</li>`).join('')}</ul>
-      ${m.linkedin ? `<a class="member-link" href="${m.linkedin}" target="_blank" rel="noopener noreferrer">${linkedinIcon} Profilo LinkedIn<span class="sr-only"> di ${m.name}</span></a>` : ''}
+      ${m.linkedin ? `<a class="member-link" href="${m.linkedin}" target="_blank" rel="noopener noreferrer">${linkedinIcon} ${NL.t('linkedin')}<span class="sr-only"> ${NL.t('of')} ${m.name}</span></a>` : ''}
     </article>`).join('');
 
   NL.observeReveal(grid);
-})(window.NextLevel);
+});

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="past.meta.eventi-passati-next-level">Eventi passati – Next Level</title>
+<meta data-i18n-content="past.meta.content-l-archivio-degli-eventi" name="description" content="L'archivio degli eventi di Next Level: foto, riepiloghi e materiali degli incontri passati.">
+<meta name="theme-color" content="#0c1f3d">
+<meta property="og:type" content="website">
+<meta data-i18n-content="past.meta.content-eventi-passati-next-level" property="og:title" content="Eventi passati – Next Level">
+<meta data-i18n-content="past.meta.content-l-archivio-degli-eventi-2" property="og:description" content="L'archivio degli eventi di Next Level.">
+<meta property="og:image" content="../assets/logo.png">
+<link rel="icon" type="image/png" href="../assets/logo.png">
+<link rel="stylesheet" href="../css/main.css">
+<script src="../js/core/lang.js"></script>
+</head>
+<body>
+
+<a data-i18n="common.page.vai-al-contenuto" class="skip" href="#contenuto">Vai al contenuto</a>
+<div class="scroll-progress" id="scroll-progress"></div>
+<header>
+  <div class="container nav">
+    <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="" class="logo-img">Next<span>Level</span></a>
+    <button data-i18n-aria-label="common.header.aria-label-apri-il-menu" class="burger" aria-label="Apri il menu" aria-expanded="false"><span></span></button>
+    <nav>
+      <ul id="menu">
+        <li><a data-i18n="common.nav.chi-siamo-e-cosa" href="../index.html#chi-siamo">Chi siamo e cosa facciamo</a></li>
+        <li><a data-i18n="common.nav.membri" href="membri.html">Membri</a></li>
+        <li><a data-i18n="common.nav.manifesto" href="manifesto.html">Manifesto</a></li>
+        <li><a data-i18n="common.nav.per-te" href="../index.html#per-chi">Per te</a></li>
+        <li><a data-i18n="common.nav.eventi" href="../index.html#eventi" class="is-active">Eventi</a></li>
+        <li><a data-i18n="common.nav.faq" href="../index.html#faq">FAQ</a></li>
+        <li><a data-i18n="common.nav.unisciti" href="contatti.html" class="btn btn-primary">Unisciti</a></li>
+        <li><a data-i18n="common.nav.en" data-i18n-aria-label="common.nav.aria-label-passa-alla-versione-inglese" class="lang-link" href="#" data-lang-toggle hreflang="en" lang="en" aria-label="Passa alla versione inglese">EN</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenuto">
+<section class="page-hero">
+  <div class="container">
+    <span data-i18n="common.page-hero.eventi-passati" class="eyebrow">Eventi passati</span>
+    <h1 data-i18n="past.page-hero.gli-incontri-che-abbiamo">Gli incontri che <em>abbiamo fatto.</em></h1>
+    <p data-i18n="past.page-hero.foto-riepiloghi-e-materiali">Foto, riepiloghi e materiali degli eventi di Next Level. Ogni evento arriva qui da solo, appena si conclude.</p>
+  </div>
+</section>
+
+<section class="past-events">
+  <div class="container">
+    <div class="cards events-grid" id="past-events-list"></div>
+    <div class="events-note reveal"><span data-i18n="past.past-events.cerchi-i-prossimi-appuntamenti">Cerchi i prossimi appuntamenti?</span><a data-i18n="past.past-events.vai-agli-eventi-in" href="../index.html#eventi">Vai agli eventi in programma →</a></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container reveal">
+    <h2 data-i18n="common.cta-band.pronto-a-entrare-nella">Pronto a entrare nella <em>rete?</em></h2>
+    <a data-i18n="common.cta-band.unisciti-a-next-level" href="contatti.html" class="btn btn-primary">Unisciti a Next Level <span class="btn-arrow" aria-hidden="true">→</span></a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="" class="logo-img">Next<span>Level</span></a>
+    <p data-i18n="common.footer.ideas-people-impact" class="footer-motto">Ideas. People. Impact.</p>
+    <p data-i18n="common.footer.next-level-associazione-dove">© <span id="footer-year"></span> Next Level – Associazione. Dove il talento incontra l'esperienza.</p>
+    <p><a data-i18n="common.footer.informativa-sulla-privacy" href="../index.html#privacy">Informativa sulla privacy</a></p>
+  </div>
+</footer>
+
+<button data-i18n-aria-label="common.page.aria-label-torna-su" class="back-to-top" id="back-to-top" aria-label="Torna su"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<script src="../js/data/site.js"></script>
+<script src="../js/core/i18n.js"></script>
+<script src="../js/data/events.js"></script>
+<script src="../js/core/events-util.js"></script>
+<script src="../js/core/reveal.js"></script>
+<script src="../js/core/navigation.js"></script>
+<script src="../js/pages/past-events.js"></script>
+<script src="../js/core/footer.js"></script>
+</body>
+</html>
