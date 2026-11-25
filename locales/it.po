@@ -153,9 +153,6 @@ msgstr "ore"
 msgid "home.countdown.minuti"
 msgstr "minuti"
 
-#: index.html
-msgid "home.countdown.secondi"
-msgstr "secondi"
 
 #: index.html
 msgid "home.countdown.iscriviti"
@@ -1138,3 +1135,176 @@ msgstr "Formula"
 
 msgid "event.aperitivo-introduttivo.fact.3.value"
 msgstr "Aperitivo a 15 € a persona: 1 cocktail e 4 tapas"
+
+# ===== Quiz "Qual è il tuo prossimo livello?" (pages/quiz.html e invito nella home) =====
+
+msgid "quiz.meta.title"
+msgstr "Quiz: qual è il tuo prossimo livello? – Next Level"
+
+msgid "quiz.meta.description"
+msgstr "Sei domande, mezzo minuto: scopri a che punto sei con carriera, competenze e rete, e come salire di livello con Next Level."
+
+msgid "quiz.hero.eyebrow"
+msgstr "Quiz"
+
+msgid "quiz.hero.title"
+msgstr "Qual è il tuo <em>prossimo livello?</em>"
+
+msgid "quiz.hero.lead"
+msgstr "Sei domande, mezzo minuto, zero stress. Scopri a che punto sei con carriera, competenze e rete, e cosa fare per salire di livello."
+
+msgid "quiz.intro.title"
+msgstr "Pronto a salire di livello?"
+
+msgid "quiz.intro.text"
+msgstr "Rispondi d'istinto: non ci sono risposte giuste, solo punti di partenza."
+
+msgid "quiz.intro.start"
+msgstr "Inizia il quiz"
+
+msgid "quiz.intro.privacy"
+msgstr "Le tue risposte restano sul tuo dispositivo: non le salviamo e non le inviamo a nessuno."
+
+msgid "home.quiz.cta"
+msgstr "Fai il quiz <span class=\"btn-arrow\" aria-hidden=\"true\">→</span>"
+
+msgid "js.quizQuestion"
+msgstr "Domanda {n} di {total}"
+
+msgid "js.quizBack"
+msgstr "← Indietro"
+
+msgid "js.quizYourLevel"
+msgstr "Il tuo livello"
+
+msgid "js.quizDimCareer"
+msgstr "Carriera"
+
+msgid "js.quizDimSkills"
+msgstr "Competenze"
+
+msgid "js.quizDimNetwork"
+msgstr "Rete"
+
+msgid "js.quizScoreLabel"
+msgstr "{dim}: {n} su {max}"
+
+msgid "js.quizCtaJoin"
+msgstr "Entra nella rete"
+
+msgid "js.quizCtaContact"
+msgstr "Scrivici"
+
+msgid "js.quizRetry"
+msgstr "Rifai il quiz"
+
+msgid "js.quizShare"
+msgstr "Condividi il risultato"
+
+msgid "js.quizShareText"
+msgstr "Al quiz di Next Level sono «{level}». E tu, qual è il tuo prossimo livello?"
+
+msgid "js.quizCopied"
+msgstr "Testo copiato ✓"
+
+msgid "quiz.q.0.title"
+msgstr "Tra cinque anni, dove ti vedi?"
+
+msgid "quiz.q.0.a.0"
+msgstr "Boh, per ora sto esplorando"
+
+msgid "quiz.q.0.a.1"
+msgstr "Ho un'idea, ma mi mancano i passi per arrivarci"
+
+msgid "quiz.q.0.a.2"
+msgstr "Ho un piano e lo sto già seguendo"
+
+msgid "quiz.q.1.title"
+msgstr "Domani ti chiamano per un colloquio in un'azienda che ammiri. Tu…"
+
+msgid "quiz.q.1.a.0"
+msgstr "Panico: non so nemmeno cosa dire di me"
+
+msgid "quiz.q.1.a.1"
+msgstr "Mi preparo al volo e incrocio le dita"
+
+msgid "quiz.q.1.a.2"
+msgstr "Sono pronto: il mio racconto e il CV sono già a posto"
+
+msgid "quiz.q.2.title"
+msgstr "Quando hai imparato qualcosa di nuovo, per lo studio o il lavoro, l'ultima volta?"
+
+msgid "quiz.q.2.a.0"
+msgstr "Mmm… a parte le lezioni obbligatorie, non ricordo"
+
+msgid "quiz.q.2.a.1"
+msgstr "Qualche mese fa, un corso o un video"
+
+msgid "quiz.q.2.a.2"
+msgstr "Questo mese: non mi fermo mai"
+
+msgid "quiz.q.3.title"
+msgstr "Devi presentare un'idea davanti a un gruppo. Come va?"
+
+msgid "quiz.q.3.a.0"
+msgstr "Preferirei sparire sotto il tavolo"
+
+msgid "quiz.q.3.a.1"
+msgstr "Ce la faccio, ma con le mani sudate"
+
+msgid "quiz.q.3.a.2"
+msgstr "Mi piace: è il mio momento"
+
+msgid "quiz.q.4.title"
+msgstr "A quante persone, fuori dalla tua cerchia, potresti chiedere un consiglio di lavoro?"
+
+msgid "quiz.q.4.a.0"
+msgstr "Una o due, forse"
+
+msgid "quiz.q.4.a.1"
+msgstr "Qualcuno, ma non li sento da un po'"
+
+msgid "quiz.q.4.a.2"
+msgstr "Parecchi, e ci scambiamo idee con regolarità"
+
+msgid "quiz.q.5.title"
+msgstr "Sei a un evento di networking e vedi qualcuno da solo. Che fai?"
+
+msgid "quiz.q.5.a.0"
+msgstr "Guardo il telefono e faccio finta di niente"
+
+msgid "quiz.q.5.a.1"
+msgstr "Aspetto che sia lui a farsi avanti"
+
+msgid "quiz.q.5.a.2"
+msgstr "Vado, mi presento e parto con una domanda"
+
+msgid "quiz.result.1.title"
+msgstr "Esploratore"
+
+msgid "quiz.result.1.text"
+msgstr "Stai guardando il panorama, ed è il punto di partenza migliore. Ti manca vedere da vicino come lavora chi fa il mestiere che ti incuriosisce: basta una serata di chiacchiere, senza nessun obbligo."
+
+msgid "quiz.result.2.title"
+msgstr "Costruttore di rete"
+
+msgid "quiz.result.2.text"
+msgstr "Hai le basi e qualche contatto: ora si tratta di trasformarli in occasioni. Ti serve un posto dove incontrare con regolarità persone di settori diversi e fare le domande giuste."
+
+msgid "quiz.result.3.title"
+msgstr "Pronto al salto"
+
+msgid "quiz.result.3.text"
+msgstr "Sai dove vuoi andare e come presentarti. Il livello successivo è restituire: porta la tua esperienza a chi sta iniziando e allarga la rete tra pari."
+
+msgid "quiz.tip.network"
+msgstr "Il punto da allenare è la rete: una conversazione a settimana con qualcuno di nuovo vale più di cento contatti su LinkedIn."
+
+msgid "quiz.tip.skills"
+msgstr "Il punto da allenare sono le competenze: sceglierne una sola e dedicarle un'ora a settimana. Parlare in pubblico è un ottimo inizio."
+
+msgid "quiz.tip.career"
+msgstr "Il punto da allenare è la direzione: scrivi dove vuoi essere tra cinque anni e fai due chiacchiere con chi ci è già arrivato."
+
+msgid "quiz.tip.top"
+msgstr "Sei in alto su tutto: il prossimo livello è aiutare gli altri a salire."

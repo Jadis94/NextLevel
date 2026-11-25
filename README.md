@@ -24,6 +24,7 @@ Il sito è composto da pagine statiche:
 | `pages/contatti.html` | Pagina con il modulo per scriverci. |
 | `pages/evento.html` | Pagina di dettaglio di un evento, selezionato tramite parametro (`pages/evento.html?id=<id>`). |
 | `pages/eventi-passati.html` | Archivio degli eventi conclusi (ogni evento vi passa da solo a fine evento). |
+| `pages/quiz.html` | Quiz "Qual è il tuo prossimo livello?": sei domande, risultato in tre livelli e invito a iscriversi. Le risposte non vengono salvate. Invito nella home (`#quiz`). |
 | `404.html` | Pagina mostrata per gli indirizzi inesistenti. Usa percorsi assoluti che partono da `/NextLevel/`: con un dominio proprio vanno cambiati in `/`. |
 | `sitemap.xml`, `robots.txt` | Per i motori di ricerca. Aggiungere qui le nuove pagine e i nuovi eventi. |
 
@@ -33,9 +34,9 @@ Tecnologie impiegate: HTML5, CSS3 e JavaScript (ES6+), senza framework né dipen
 
 ## Requisiti e utilizzo
 
-Non serve compilare nulla, ma **il sito va aperto da un server, anche locale**: i testi sono letti dai file `.po` e il browser non li legge aprendo `index.html` con un doppio clic (file://). Il modo più semplice è l'estensione "Live Server" di VS Code (tasto destro su `index.html` → "Open with Live Server"). In alternativa, dalla cartella del progetto: `npx serve`.
+Non serve installare né compilare nulla: basta aprire `index.html` con un browser moderno, anche con un doppio clic. Il sito legge i testi da `locales/*.po`; quando è aperto da file (dove il browser non può leggerli) usa le copie generate `locales/it.js` e `locales/en.js`.
 
-Per provare l'inglese si può aggiungere `?lang=en` all'indirizzo (`?lang=it` per l'italiano): la scelta viene ricordata dal browser.
+Per provare l'inglese si può aggiungere `?lang=en` all'indirizzo (`?lang=it` per l'italiano): la scelta viene ricordata dal browser. Senza scelta, la lingua è quella del browser.
 
 ## Struttura del progetto
 
@@ -44,13 +45,17 @@ index.html              Home page
 locales/
   it.po                 Tutti i testi in italiano (pagine, messaggi, frasi, profili, eventi)
   en.po                 Gli stessi testi in inglese (le chiavi devono essere identiche)
+  it.js, en.js          GENERATI dai .po (non modificarli): servono per aprire il sito con doppio clic
 tools/
+  build-locales.js      Genera locales/it.js e en.js dai .po: node tools/build-locales.js
   check-i18n.js         Controllo dei testi: node tools/check-i18n.js
 pages/
   membri.html           Pagina dei membri
   manifesto.html        Pagina del manifesto
   contatti.html         Pagina contatti con il modulo
   evento.html           Pagina di dettaglio degli eventi (evento.html?id=<id>)
+  eventi-passati.html   Archivio degli eventi conclusi
+  quiz.html             Quiz sul "prossimo livello"
 assets/
   logo.png              Logo e favicon
   volantini/            Volantini scaricabili in PDF (link da manifesto e contatti)
@@ -83,6 +88,7 @@ js/
     persona.js          Personalizzazione dei contenuti in base al profilo dell'utente
   pages/                Script delle pagine interne
     members.js          Generazione delle card dei membri (membri.html)
+    quiz.js             Quiz (domande, punteggio e risultato; testi in locales/*.po, chiavi quiz.*)
     event-page.js       Pagina di dettaglio di un evento (evento.html)
     contact-form.js     Modulo di contatto (contatti.html)
 ```
@@ -134,5 +140,6 @@ Il sito è statico e viene ospitato su GitHub Pages. La pubblicazione avviene a 
 - **Iscrizione**: il pulsante "Iscriviti" apre il modulo Google indicato in `registerUrl` (`js/data/site.js`); un evento può avere un modulo proprio con il campo `register`. Nella pagina dell'evento c'è anche "Aggiungi al calendario" (file .ics generato nel browser).
 - **Conto alla rovescia**: usa il primo evento futuro di `js/data/events.js` (campo `start`, con fuso orario). Senza eventi futuri la fascia sparisce.
 - **Eventi passati**: finito l'evento (`end`, o 2 ore dopo `start`) passa da solo in `pages/eventi-passati.html`. Per arricchirlo si aggiungono `recap`, `gallery` e `slides`.
-- **Lingue**: ogni testo ha una chiave. Nell'HTML è `data-i18n="chiave"` (per gli attributi `data-i18n-aria-label`, `-placeholder`, `-content`); il testo scritto dentro l'elemento è solo quello di partenza, vince il file `.po`. Nei file JavaScript, `NL.t("nome")` legge la chiave `js.nome`. Il formato `.po` è modificabile con un editor di testo o con Poedit; in `msgstr` si può usare HTML semplice (`<em>`, `<strong>`, `<a>`, `<span>`). Dopo ogni modifica si lancia `node tools/check-i18n.js`, che segnala chiavi mancanti in una delle due lingue o inesistenti. Per cambiare lingua si usa il selettore nel menu; la scelta (o la lingua del browser) è ricordata. Il messaggio email del modulo contatti resta in italiano.
+- **Lingue**: ogni testo ha una chiave. Nell'HTML è `data-i18n="chiave"` (per gli attributi `data-i18n-aria-label`, `-placeholder`, `-content`); il testo scritto dentro l'elemento è solo quello di partenza, vince il file `.po`. Nei file JavaScript, `NL.t("nome")` legge la chiave `js.nome`. Il formato `.po` è modificabile con un editor di testo o con Poedit; in `msgstr` si può usare HTML semplice (`<em>`, `<strong>`, `<a>`, `<span>`). Dopo ogni modifica ai `.po` si lancia `node tools/build-locales.js` (aggiorna i file `.js` generati, da pubblicare insieme ai `.po`) e poi `node tools/check-i18n.js`, che segnala chiavi mancanti in una delle due lingue, chiavi inesistenti o file generati non aggiornati. Per cambiare lingua si usa il selettore nel menu; la scelta (o la lingua del browser) è ricordata. Il messaggio email del modulo contatti resta in italiano.
 - **Limite**: esiste un solo indirizzo per pagina, quindi i motori di ricerca vedono soprattutto la versione italiana.
+- **Quiz**: le sei domande (due per carriera, competenze e rete) stanno in `locales/*.po` (`quiz.q.N.title`, `quiz.q.N.a.0-2`); i tre livelli in `quiz.result.1-3.*`, i consigli in `quiz.tip.*`. Per cambiare domande o risposte basta modificare i testi; per aggiungerne servono anche la riga in `DIMENSIONS` di `js/pages/quiz.js`. I livelli si calcolano sul totale (0-4, 5-8, 9-12).

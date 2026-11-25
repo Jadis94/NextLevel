@@ -153,9 +153,6 @@ msgstr "hours"
 msgid "home.countdown.minuti"
 msgstr "minutes"
 
-#: index.html
-msgid "home.countdown.secondi"
-msgstr "seconds"
 
 #: index.html
 msgid "home.countdown.iscriviti"
@@ -1138,3 +1135,176 @@ msgstr "Format"
 
 msgid "event.aperitivo-introduttivo.fact.3.value"
 msgstr "Aperitivo at €15 per person: 1 cocktail and 4 tapas"
+
+# ===== Quiz "Qual è il tuo prossimo livello?" (pages/quiz.html e invito nella home) =====
+
+msgid "quiz.meta.title"
+msgstr "Quiz: what is your next level? – Next Level"
+
+msgid "quiz.meta.description"
+msgstr "Six questions, half a minute: find out where you stand on career, skills and network, and how to level up with Next Level."
+
+msgid "quiz.hero.eyebrow"
+msgstr "Quiz"
+
+msgid "quiz.hero.title"
+msgstr "What is your <em>next level?</em>"
+
+msgid "quiz.hero.lead"
+msgstr "Six questions, half a minute, zero stress. Find out where you stand on career, skills and network, and what to do to level up."
+
+msgid "quiz.intro.title"
+msgstr "Ready to level up?"
+
+msgid "quiz.intro.text"
+msgstr "Answer on instinct: there are no right answers, only starting points."
+
+msgid "quiz.intro.start"
+msgstr "Start the quiz"
+
+msgid "quiz.intro.privacy"
+msgstr "Your answers stay on your device: we do not store them or send them to anyone."
+
+msgid "home.quiz.cta"
+msgstr "Take the quiz <span class=\"btn-arrow\" aria-hidden=\"true\">→</span>"
+
+msgid "js.quizQuestion"
+msgstr "Question {n} of {total}"
+
+msgid "js.quizBack"
+msgstr "← Back"
+
+msgid "js.quizYourLevel"
+msgstr "Your level"
+
+msgid "js.quizDimCareer"
+msgstr "Career"
+
+msgid "js.quizDimSkills"
+msgstr "Skills"
+
+msgid "js.quizDimNetwork"
+msgstr "Network"
+
+msgid "js.quizScoreLabel"
+msgstr "{dim}: {n} out of {max}"
+
+msgid "js.quizCtaJoin"
+msgstr "Join the network"
+
+msgid "js.quizCtaContact"
+msgstr "Write to us"
+
+msgid "js.quizRetry"
+msgstr "Take the quiz again"
+
+msgid "js.quizShare"
+msgstr "Share your result"
+
+msgid "js.quizShareText"
+msgstr "In the Next Level quiz I got “{level}”. What is your next level?"
+
+msgid "js.quizCopied"
+msgstr "Text copied ✓"
+
+msgid "quiz.q.0.title"
+msgstr "Where do you see yourself in five years?"
+
+msgid "quiz.q.0.a.0"
+msgstr "No idea yet, I'm still exploring"
+
+msgid "quiz.q.0.a.1"
+msgstr "I have an idea, but I'm missing the steps to get there"
+
+msgid "quiz.q.0.a.2"
+msgstr "I have a plan and I'm already following it"
+
+msgid "quiz.q.1.title"
+msgstr "Tomorrow you're invited to interview at a company you admire. You…"
+
+msgid "quiz.q.1.a.0"
+msgstr "Panic: I wouldn't even know what to say about myself"
+
+msgid "quiz.q.1.a.1"
+msgstr "Prepare on the fly and cross my fingers"
+
+msgid "quiz.q.1.a.2"
+msgstr "I'm ready: my story and my CV are already sorted"
+
+msgid "quiz.q.2.title"
+msgstr "When did you last learn something new for your studies or work?"
+
+msgid "quiz.q.2.a.0"
+msgstr "Hmm… apart from compulsory classes, I can't remember"
+
+msgid "quiz.q.2.a.1"
+msgstr "A few months ago, a course or a video"
+
+msgid "quiz.q.2.a.2"
+msgstr "This month: I never stop"
+
+msgid "quiz.q.3.title"
+msgstr "You have to pitch an idea to a group. How does it go?"
+
+msgid "quiz.q.3.a.0"
+msgstr "I'd rather disappear under the table"
+
+msgid "quiz.q.3.a.1"
+msgstr "I manage, but with sweaty palms"
+
+msgid "quiz.q.3.a.2"
+msgstr "I love it: it's my moment"
+
+msgid "quiz.q.4.title"
+msgstr "How many people outside your inner circle could you ask for career advice?"
+
+msgid "quiz.q.4.a.0"
+msgstr "One or two, maybe"
+
+msgid "quiz.q.4.a.1"
+msgstr "A few, but I haven't spoken to them in a while"
+
+msgid "quiz.q.4.a.2"
+msgstr "Plenty, and we swap ideas regularly"
+
+msgid "quiz.q.5.title"
+msgstr "You're at a networking event and spot someone standing alone. What do you do?"
+
+msgid "quiz.q.5.a.0"
+msgstr "Check my phone and pretend not to notice"
+
+msgid "quiz.q.5.a.1"
+msgstr "Wait for them to make the first move"
+
+msgid "quiz.q.5.a.2"
+msgstr "Walk over, introduce myself and start with a question"
+
+msgid "quiz.result.1.title"
+msgstr "Explorer"
+
+msgid "quiz.result.1.text"
+msgstr "You're scanning the horizon, and that's the best place to start. What's missing is seeing up close how people in the jobs that intrigue you actually work: one evening of chatting is enough, no strings attached."
+
+msgid "quiz.result.2.title"
+msgstr "Network Builder"
+
+msgid "quiz.result.2.text"
+msgstr "You've got the basics and a few contacts: now it's about turning them into opportunities. You need a place to regularly meet people from different sectors and ask the right questions."
+
+msgid "quiz.result.3.title"
+msgstr "Ready to Leap"
+
+msgid "quiz.result.3.text"
+msgstr "You know where you're headed and how to present yourself. The next level is giving back: bring your experience to those just starting out and widen your peer network."
+
+msgid "quiz.tip.network"
+msgstr "The area to train is your network: one conversation a week with someone new is worth more than a hundred LinkedIn connections."
+
+msgid "quiz.tip.skills"
+msgstr "The area to train is skills: pick just one and give it an hour a week. Public speaking is a great place to start."
+
+msgid "quiz.tip.career"
+msgstr "The area to train is direction: write down where you want to be in five years and have a chat with someone who's already there."
+
+msgid "quiz.tip.top"
+msgstr "You're at the top on everything: the next level is helping others climb."

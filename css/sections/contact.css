@@ -3,6 +3,7 @@
 .cta-band::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 46px,rgba(220,193,147,.05) 46px 48px)}
 .cta-band .container{position:relative}
 .cta-band h2{margin-bottom:1.6rem}
+.cta-actions{display:flex;gap:.8rem 1rem;justify-content:center;flex-wrap:wrap}
 .cta-band h2 em{color:var(--gold)}
 .cta-band-watermark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:var(--serif);font-weight:800;font-size:clamp(5rem,22vw,19rem);letter-spacing:-.04em;white-space:nowrap;color:transparent;-webkit-text-stroke:2px rgba(220,193,147,.16);pointer-events:none;user-select:none;line-height:1}
 
@@ -57,6 +58,7 @@ form .btn:disabled{opacity:.7;cursor:progress}
 }
 @media(max-width:540px){
   form{padding:1.4rem}
+  .cta-actions .btn{width:100%;justify-content:center}
 }
 .contact-flyer{margin-top:1.4rem}
 .contact-flyer a{font-weight:700;color:var(--wine);text-decoration:underline;text-underline-offset:4px}

@@ -3,9 +3,10 @@
      Il testo scritto nell'HTML è solo quello di partenza: vince quello del file .po.
    - Gli script che hanno bisogno dei testi si registrano con NL.ready(NL => { … }) e partono a testi pronti.
    - NL.t("nome") restituisce il testo della chiave js.nome (messaggi generati da JavaScript).
-   Va caricato subito dopo site.js. Richiede un server (anche locale): il browser non legge file da file://. */
+   Va caricato subito dopo site.js. Da file:// (doppio clic) usa la riserva locales/<lingua>.js. */
 (function (NL) {
   let dict = {};
+  let failed = false;
 
   // Lettura del formato gettext: coppie msgid "chiave" / msgstr "testo", anche su più righe
   const unescape = s => s.replace(/\\(n|t|"|\\)/g, (m, c) => ({ n: '\n', t: '\t', '"': '"', '\\': '\\' }[c]));
@@ -24,18 +25,44 @@
     return out;
   }
 
+  // Riserva per file:// (doppio clic): locales/<lingua>.js, generato dai .po con tools/build-locales.js,
+  // si carica come uno script normale e quindi il browser lo permette
+  function loadFallback() {
+    return new Promise(resolve => {
+      const script = document.createElement('script');
+      script.src = NL.url('locales/' + NL.lang + '.js');
+      script.onload = () => {
+        const texts = (window.NextLevelTexts || {})[NL.lang];
+        if (texts) dict = texts; else failed = true;
+        resolve();
+      };
+      script.onerror = () => { failed = true; resolve(); };
+      document.head.appendChild(script);
+    });
+  }
+
+  // Dal server si leggono direttamente i .po; da file:// (o se la lettura fallisce) si passa alla riserva
   const loaded = new Promise(resolve => {
+    if (location.protocol === 'file:') { resolve(loadFallback()); return; }
     const xhr = new XMLHttpRequest();
     xhr.open('GET', NL.url('locales/' + NL.lang + '.po'));
     xhr.overrideMimeType('text/plain; charset=utf-8');
     xhr.onload = () => {
-      if (xhr.status === 200 || (xhr.status === 0 && xhr.responseText)) dict = parsePo(xhr.responseText);
-      else console.error('Testi non trovati (' + xhr.status + '): locales/' + NL.lang + '.po');
-      resolve();
+      if (xhr.status === 200) { dict = parsePo(xhr.responseText); resolve(); }
+      else { console.warn('Testi non trovati (' + xhr.status + '): locales/' + NL.lang + '.po, uso la riserva .js'); resolve(loadFallback()); }
     };
-    xhr.onerror = () => { console.error('Impossibile leggere locales/' + NL.lang + '.po: apri il sito da un server (vedi README).'); resolve(); };
+    xhr.onerror = () => { console.warn('Impossibile leggere locales/' + NL.lang + '.po, uso la riserva .js'); resolve(loadFallback()); };
     xhr.send();
   });
+  // Se il file dei testi non si legge, la pagina avvisa invece di mostrare solo chiavi tecniche
+  function warnMissingTexts() {
+    const note = document.createElement('div');
+    note.setAttribute('role', 'alert');
+    note.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:200;background:#7a2e45;color:#fff;padding:.7rem 1rem;font:600 .9rem/1.4 sans-serif;text-align:center';
+    note.textContent = 'Testi non caricati (locales/' + NL.lang + '): ricarica la pagina o controlla che la cartella locales/ sia pubblicata.';
+    document.body.appendChild(note);
+  }
+
   const domReady = new Promise(resolve => {
     if (document.readyState !== 'loading') resolve();
     else document.addEventListener('DOMContentLoaded', resolve);
@@ -109,6 +136,7 @@
   const ready = Promise.all([loaded, domReady]).then(() => {
     applyToPage();
     localizeData();
+    if (failed) warnMissingTexts();
     document.documentElement.classList.remove('i18n-pending');
   });
 

@@ -14,8 +14,7 @@ window.NextLevel.ready(function (NL) {
   const cells = {
     days: document.getElementById('cd-days'),
     hours: document.getElementById('cd-hours'),
-    minutes: document.getElementById('cd-minutes'),
-    seconds: document.getElementById('cd-seconds')
+    minutes: document.getElementById('cd-minutes')
   };
 
   title.textContent = next.title;
@@ -31,7 +30,6 @@ window.NextLevel.ready(function (NL) {
     cells.days.textContent = Math.floor(s / 86400);
     cells.hours.textContent = pad(Math.floor(s % 86400 / 3600));
     cells.minutes.textContent = pad(Math.floor(s % 3600 / 60));
-    cells.seconds.textContent = pad(s % 60);
     if (left === 0) {
       clearInterval(timer);
       band.classList.add('is-live');
@@ -39,6 +37,6 @@ window.NextLevel.ready(function (NL) {
     }
   }
 
-  const timer = setInterval(tick, 1000);
+  const timer = setInterval(tick, 10000);
   tick();
 });

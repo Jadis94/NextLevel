@@ -1,4 +1,4 @@
-/* EVENTI (le card sono generate da js/events.js) */
+/* EVENTI (le card sono generate da js/core/events-util.js) */
 /* con pochi eventi le card non si allargano a tutta la riga */
 .events-grid{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
 .event{padding:0;display:flex;flex-direction:column}
